@@ -4,8 +4,8 @@ import classnames from 'classnames'
 
 import bell from '../scss/media/bell.e5471636.svg'
 import Avatar from '../components/Avatar'
-import PropTypes from 'prop-types'
 
+// eslint-disable-next-line react/prop-types
 function UserInfo({ className }) {
   const userInfo = useSelector((state) => state.app.user)
 
@@ -29,7 +29,5 @@ function UserInfo({ className }) {
     </div>
   )
 }
-UserInfo.propTypes = {
-  className: PropTypes.string.isRequired,
-}
+
 export default UserInfo

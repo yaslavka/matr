@@ -8,7 +8,7 @@ import appReducer from '../reducers/app.reducer'
 import authReducer from '../reducers/auth.reducer'
 import teamReducer from '../reducers/team.reducer'
 import newsReducer from '../reducers/news.reducer'
-import exchangeReducer from '../reducers/exchange.reducer'
+import casinoReducer from '../reducers/casino.reducer'
 import financeReducer from '../reducers/finance.reducer'
 import startrekReducer from '../reducers/startrek.reducer'
 import superstarReducer from '../reducers/superstar.reducer'
@@ -23,7 +23,7 @@ const rootReducer = (history) =>
     auth: authReducer,
     team: teamReducer,
     news: newsReducer,
-    exchange: exchangeReducer,
+    casino: casinoReducer,
     finance: financeReducer,
     startrek: startrekReducer,
     superstar: superstarReducer,

@@ -5,7 +5,7 @@ import isEmpty from 'lodash-es/isEmpty'
 import { toast } from 'react-toastify'
 
 import r from '../constants/routes.constants'
-import * as ActionTypes from '../constants/exchange.constants'
+import * as ActionTypes from '../constants/casino.constants'
 import * as actions from '../actions/casino.actions'
 import * as api from '../api/casino.api'
 

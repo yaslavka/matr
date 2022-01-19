@@ -1,8 +1,19 @@
 import React, { useState } from 'react'
 import styles from './Select.module.scss'
-import PropTypes from 'prop-types'
 
-function Select({ values = [], defaultValue, placeholder, className, onChange }) {
+// eslint-disable-next-line react/prop-types
+export default function Select({
+  // eslint-disable-next-line react/prop-types
+  values = [],
+  // eslint-disable-next-line react/prop-types
+  defaultValue,
+  // eslint-disable-next-line react/prop-types
+  placeholder,
+  // eslint-disable-next-line react/prop-types
+  className,
+  // eslint-disable-next-line react/prop-types
+  onChange,
+}) {
   const [currentValue, setCurrentValue] = useState(defaultValue || placeholder)
   const [isOpened, setIsOpened] = useState(false)
 
@@ -45,11 +56,3 @@ function Select({ values = [], defaultValue, placeholder, className, onChange })
     </div>
   )
 }
-Select.propTypes = {
-  values: PropTypes.string.isRequired,
-  defaultValue: PropTypes.string,
-  placeholder: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
-  onChange: PropTypes.string.isRequired,
-}
-export default Select

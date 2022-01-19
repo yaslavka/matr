@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Switch, Redirect, BrowserRouter as Router, BrowserRouter, Route } from 'react-router-dom'
+import { Switch, Redirect, Route } from 'react-router-dom'
 import { Row, Col, Container } from 'reactstrap'
 
 import * as actions from '../../../actions/news.actions'
@@ -39,15 +39,11 @@ function News() {
           <NavBar />
         </Col>
         <Col>
-          <BrowserRouter>
-            <Router>
-              <Switch>
-                <Route exact path={routes.news} component={NewsPage} />
-                <Route exact path={routes.newsItem} component={NewsItemPage} />
-                <Redirect to={routes.news} />
-              </Switch>
-            </Router>
-          </BrowserRouter>
+          <Switch>
+            <Route exact path={routes.news} component={NewsPage} />
+            <Route exact path={routes.newsItem} component={NewsItemPage} />
+            <Redirect to={routes.news} />
+          </Switch>
         </Col>
       </Row>
     </Container>

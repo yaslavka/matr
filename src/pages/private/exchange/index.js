@@ -76,7 +76,7 @@ const Exchange = ({ priceSell }) => {
                   </>
                 )}
                 <div className="line">
-                  <span>Количество:</span>
+                  <span className="span">Количество:</span>
                   <div className="poles">
                     <input
                       name="amount"
@@ -92,28 +92,28 @@ const Exchange = ({ priceSell }) => {
                   </div>
                 </div>
                 <div className="line">
-                  <span>Цена:</span>
+                  <span className="span">Цена:</span>
                   <div className="poles">
                     <input name="price" maxLength="25" type="text" />
                     <span className="currency">BTC</span>
                   </div>
                 </div>
                 <div className="line">
-                  <span>Всего:</span>
+                  <span className="span">Всего:</span>
                   <div className="poles">
                     <input name="total" maxLength="25" type="text" value="0" />
                     <span className="currency">BTC</span>
                   </div>
                 </div>
                 <div className="line">
-                  <span>Ком (0.2%):</span>
+                  <span className="span">Ком (0.2%):</span>
                   <div className="poles">
                     <input name="fee" maxLength="25" type="text" value="0.00015535" disabled="" />
                     <span className="currency">BTC</span>
                   </div>
                 </div>
                 <div className="line">
-                  <span>Всего+Ком:</span>
+                  <span className="span">Всего+Ком:</span>
                   <div className="poles">
                     <input
                       name="totalfee"

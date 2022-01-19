@@ -27,7 +27,7 @@ function MyPlanetsElement({ planet }) {
       <div
         className="startrek__planet-card-picture"
         style={{ backgroundImage: `url(${planetImg.default})` }}
-      ></div>
+      />
       <div className="card">
         <div className="card__header">
           <div className="card__header-left">

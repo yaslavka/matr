@@ -1,8 +1,19 @@
 import React, { useState } from 'react'
 import styles from './SearchSelect.module.scss'
-import PropTypes from 'prop-types'
 
-function SearchSelect({ values, placeholder, className, onChange, onInput }) {
+// eslint-disable-next-line react/prop-types
+export default function SearchSelect({
+  // eslint-disable-next-line react/prop-types
+  values,
+  // eslint-disable-next-line react/prop-types
+  placeholder,
+  // eslint-disable-next-line react/prop-types
+  className,
+  // eslint-disable-next-line react/prop-types
+  onChange,
+  // eslint-disable-next-line react/prop-types
+  onInput,
+}) {
   const [currentValue, setCurrentValue] = useState('')
 
   const changeCurrentValue = ({ target: { value } }) => {
@@ -34,7 +45,14 @@ function SearchSelect({ values, placeholder, className, onChange, onInput }) {
           fill="#fff"
         />
       </svg>
-      <div className={`${styles.variants} ${values.length > 0 ? styles.opened : ''}`}>
+      {/* eslint-disable-next-line react/prop-types */}
+      <div
+        className={`${styles.variants} ${
+          // eslint-disable-next-line react/prop-types
+          values.length > 0 ? styles.opened : ''
+        }`}
+      >
+        {/* eslint-disable-next-line react/prop-types */}
         {values.map(({ label, value }, index) => (
           <div
             key={index}
@@ -50,11 +68,3 @@ function SearchSelect({ values, placeholder, className, onChange, onInput }) {
     </div>
   )
 }
-SearchSelect.propTypes = {
-  className: PropTypes.string.isRequired,
-  values: PropTypes.string,
-  placeholder: PropTypes.string.isRequired,
-  onChange: PropTypes.string.isRequired,
-  onInput: PropTypes.string.isRequired,
-}
-export default SearchSelect

@@ -96,7 +96,7 @@ function SignUp({ location }) {
 
   // TODO: refactoring
   if (signUpStatus === 'successful') {
-    return <Redirect to={routes.leader} />
+    return <Redirect to={routes.signIn} />
   }
 
   return (

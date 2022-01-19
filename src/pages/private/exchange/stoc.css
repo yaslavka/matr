@@ -100,3 +100,83 @@ input {
   color: #0aadef;
   text-decoration: none;
 }
+.fild_box .inset .line {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.fild_box .inset .line .span {
+  color: #ff0000;
+  font-size: 12px;
+  width: 94px;
+  float: left;
+}
+.fild_box .inset .line .poles {
+  padding-left: 98px;
+  padding-right: 10px;
+  position: relative;
+}
+.fild_box .inset .line input[type=text] {
+  color: #5e5e5e;
+  font-size: 12px;
+  border: 1px solid #d9dfe7;
+  width: 100%;
+  height: 20px;
+  padding: 0 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  behavior: url(PIE.htc);
+}
+.fild_box .inset .line .poles .currency {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  color: #9aa8b9;
+  font-size: 12px;
+  width: auto;
+}
+
+.fild_box .inset .line span {
+  color: #5e5e5e;
+  font-size: 12px;
+  width: 94px;
+  float: left;
+}
+.buy_box input[type=button] {
+  background: #25b02b;
+}
+
+.fild_box input[type=button] {
+  font-family: 'pt_sansregular';
+  cursor: pointer;
+  min-width: 62px;
+  height: 32px;
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  behavior: url(PIE.htc);
+}
+.sell_orders_box {
+  padding: 16px 0 16px 0;
+  border-right: 1px solid #e5e5e5;
+}
+.sell_orders_box .title {
+  background-position: 0 -448px;
+  margin-bottom: 9px;
+  line-height: 20px;
+}
+.result {
+  margin-right: 15px;
+}
+table.sell_orders {
+  font-size: 11px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

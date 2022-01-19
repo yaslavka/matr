@@ -10,7 +10,6 @@ import signIn from '../../../scss/media/sig.svg'
 import signOut from '../../../scss/media/sign-out.23817495.svg'
 import routes from '../../../constants/routes.constants'
 import * as actions from '../../../actions/auth.actions'
-import PropTypes from 'prop-types'
 
 const publicNavLinks = [
   {
@@ -61,8 +60,8 @@ const privateNavLinks = [
     route: routes.superStars,
   },
   {
-    label: 'exchange',
-    route: routes.exchange,
+    label: 'Lucky Star',
+    route: routes.casino,
   },
   {
     label: 'Star Trek',
@@ -102,7 +101,8 @@ const privateNavLinks = [
   },
 ]
 
-function Header({ variant }) {
+// eslint-disable-next-line react/prop-types
+export default function Header({ variant }) {
   const dispatch = useDispatch()
   const [isNavMenuVisible, setIsNavMenuVisible] = useState(false)
   const [isHeaderVisible, setIsHeaderVisible] = useState(false)
@@ -233,7 +233,3 @@ function Header({ variant }) {
     </header>
   )
 }
-Header.propTypes = {
-  variant: PropTypes.string.isRequired,
-}
-export default Header

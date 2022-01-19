@@ -2,9 +2,21 @@ import React from 'react'
 import styles from './Table.module.scss'
 
 import ReactPaginate from 'react-paginate'
-import PropTypes from 'prop-types'
 
-function Table({ columns, data, count, onPageChange, renderObject, withoutPaginate }) {
+export default function Table({
+  // eslint-disable-next-line react/prop-types
+  columns,
+  // eslint-disable-next-line react/prop-types
+  data,
+  // eslint-disable-next-line react/prop-types
+  count,
+  // eslint-disable-next-line react/prop-types
+  onPageChange,
+  // eslint-disable-next-line react/prop-types
+  renderObject,
+  // eslint-disable-next-line react/prop-types
+  withoutPaginate,
+}) {
   const renderValue = (value, field, item) => {
     let render = value || '-'
     const renderFunction = renderObject && Object.keys(renderObject).includes(field)
@@ -24,7 +36,9 @@ function Table({ columns, data, count, onPageChange, renderObject, withoutPagina
             </div>
           ))}
         </div>
+        {/* eslint-disable-next-line react/prop-types */}
         {data && !!data.length ? (
+          // eslint-disable-next-line react/prop-types
           data.map((props, id) => (
             <div className={styles.Table_row} key={id.toString()}>
               {Object.keys(columns).map((prop, i) => (
@@ -96,12 +110,3 @@ function Table({ columns, data, count, onPageChange, renderObject, withoutPagina
     </div>
   )
 }
-Table.propTypes = {
-  columns: PropTypes.string.isRequired,
-  data: PropTypes.string,
-  count: PropTypes.string.isRequired,
-  onPageChange: PropTypes.string.isRequired,
-  renderObject: PropTypes.string.isRequired,
-  withoutPaginate: PropTypes.string.isRequired,
-}
-export default Table

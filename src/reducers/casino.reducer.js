@@ -1,4 +1,4 @@
-import * as ActionTypes from '../constants/exchange.constants'
+import * as ActionTypes from '../constants/casino.constants'
 
 const initialState = {
   draw: null,
@@ -54,7 +54,7 @@ const initialState = {
   },
 }
 
-const exchangeReducer = (state = initialState, { type, payload }) => {
+const casinoReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.CASINO_DRAW_REQUEST: {
       return {
@@ -316,4 +316,4 @@ const exchangeReducer = (state = initialState, { type, payload }) => {
   }
 }
 
-export default exchangeReducer
+export default casinoReducer

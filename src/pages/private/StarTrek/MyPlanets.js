@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback, useMemo } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import Timer, { zeroPad } from 'react-countdown'
 import { Row, Col, Container } from 'reactstrap'
 import ReactPaginate from 'react-paginate'
@@ -18,7 +18,6 @@ import UserInfo from '../../../components/UserInfo'
 import Button from '../../../components/Button'
 import Icon from '../../../components/Icon'
 import { Spinner } from 'react-bootstrap'
-import r from '../../../constants/routes.constants'
 
 function MyPlanets() {
   const history = useHistory()
@@ -27,7 +26,7 @@ function MyPlanets() {
   const selected = useSelector((state) => state.startrek.selected)
   const isLoading = useSelector((state) => state.startrek.loadings.list)
   const isUpdateLoading = useSelector((state) => state.startrek.loadings.update)
-  const user = useSelector((state) => state.app.user)
+  // const user = useSelector(state => state.app.user);
   const { total, page } = useSelector((state) => state.startrek.meta)
   const { limit } = useSelector((state) => state.startrek.query)
   const start = dayjs().tz('Europe/Minsk').startOf('date')
@@ -100,12 +99,13 @@ function MyPlanets() {
             <h1 className="root-page-title">Мои планеты</h1>
             <div className="root-page-header__right">&nbsp;</div>
           </div>
-          <div className="text-center">
+          {/* <div className="text-center">
             <h3>
-              Авто-продление планет <strong>{user?.autoRefill ? 'включено' : 'выключено'}</strong>
+              Авто-продление планет{' '}
+              <strong>{user?.autoRefill ? 'включено' : 'выключено'}</strong>
             </h3>
             <Link to={r.settings}>изменить</Link>
-          </div>
+          </div> */}
           <Spinner isLoading={isLoading}>
             <Row>
               {!isEmpty(list) ? (

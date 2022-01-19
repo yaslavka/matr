@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Checkbox.module.scss'
-import PropTypes from 'prop-types'
 
-function Checkbox({ className, label, field, form, ...props }) {
+// eslint-disable-next-line react/prop-types
+export default function Checkbox({ className, label, field, form, ...props }) {
   return (
     <label className={`${styles.Checkbox} ${className}`}>
       <input {...field} {...props} />
@@ -21,11 +21,3 @@ function Checkbox({ className, label, field, form, ...props }) {
     </label>
   )
 }
-Checkbox.propTypes = {
-  className: PropTypes.string.isRequired,
-  externalClass: PropTypes.string,
-  field: PropTypes.string.isRequired,
-  form: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-}
-export default Checkbox

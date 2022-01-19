@@ -5,9 +5,9 @@ import 'slick-carousel/slick/slick.css'
 
 import rocketLeft from '../../scss/media/rocket-left.3228ab4a.svg'
 import rocketRight from '../../scss/media/rocket-right.3d8685d1.svg'
-import PropTypes from 'prop-types'
 
 function RocketNextArrow(props) {
+  // eslint-disable-next-line react/prop-types
   const { className, style, onClick } = props
   return (
     <div className={className} style={{ ...style }} onClick={onClick}>
@@ -17,6 +17,7 @@ function RocketNextArrow(props) {
 }
 
 function RocketPrevArrow(props) {
+  // eslint-disable-next-line react/prop-types
   const { className, style, onClick } = props
   return (
     <div className={className} style={{ ...style }} onClick={onClick}>
@@ -26,8 +27,8 @@ function RocketPrevArrow(props) {
 }
 
 const settings = {
-  nextArrow: <RocketNextArrow className="" onClick="" />,
-  prevArrow: <RocketPrevArrow className="" onClick="" />,
+  nextArrow: <RocketNextArrow />,
+  prevArrow: <RocketPrevArrow />,
   slidesToScroll: 1,
   slidesToShow: 1,
   infinite: false,
@@ -160,14 +161,5 @@ function Roadmap() {
     </Slider>
   )
 }
-RocketPrevArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.string,
-  onClick: PropTypes.string.isRequired,
-}
-RocketNextArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.string,
-  onClick: PropTypes.string.isRequired,
-}
+
 export default Roadmap

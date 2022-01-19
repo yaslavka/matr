@@ -6,7 +6,7 @@ import {
   INCREASE_AMOUNT,
   MIN_NUMBER_PEOPLE,
   MAX_NUMBER_PEOPLE,
-} from '../../../../constants/exchange.constants'
+} from '../../../../constants/casino.constants'
 
 // eslint-disable-next-line react/prop-types
 function DrawCreateNumberParticipants({ table }) {

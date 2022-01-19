@@ -8,7 +8,7 @@ export const changePassword = (data) =>
   baseInstance({ url: '/user/password', method: 'post', data })
 
 export const changeFinancePassword = (data) =>
-  baseInstance({ url: '/api/settings/fin-password', method: 'post', data })
+  baseInstance({ url: '/settings/fin-password', method: 'post', data })
 
 export const changeSocial = (data) => baseInstance({ url: '/user/links', method: 'post', data })
 
@@ -16,7 +16,7 @@ export const changeDescription = (data) =>
   baseInstance({ url: '/user/description', method: 'post', data })
 
 export const changeAutoRefillPlanets = (data) =>
-  baseInstance({ url: '/api/star-trek/auto-update', method: 'post', data })
+  baseInstance({ url: '/star-trek/auto-update', method: 'post', data })
 
 export const uploadImageToTelegram = (blobImage) => {
   const formData = new FormData()

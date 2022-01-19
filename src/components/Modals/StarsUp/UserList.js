@@ -11,8 +11,8 @@ import avatarFallback from '../../../scss/media/placeholder.7e85be59.svg'
 import arrowRight from '../../../scss/media/angle-right.2219c635.svg'
 import arrowLeft from '../../../scss/media/angle-left.309b1344.svg'
 import Spinner from '../../../components/Spinner'
-import PropTypes from 'prop-types'
 
+// eslint-disable-next-line react/prop-types
 const UserList = ({ structureObj }) => {
   const dispatch = useDispatch()
   const { limit } = useSelector((state) => state.starsupTable.users.query)
@@ -103,6 +103,7 @@ const UserList = ({ structureObj }) => {
               marginPagesDisplayed={1}
               activeClassName="active"
               pageCount={Math.ceil(total / limit)}
+              /* eslint-disable-next-line react/prop-types */
               onPageChange={(props) => handleOnChangePage(props.selected)}
               containerClassName="pagination"
               zoomAble={() => console.log('d')}
@@ -115,8 +116,5 @@ const UserList = ({ structureObj }) => {
     </Modal>
   )
 }
-UserList.propTypes = {
-  structureObj: PropTypes.string.isRequired,
-  selected: PropTypes.string.isRequired,
-}
+
 export default UserList

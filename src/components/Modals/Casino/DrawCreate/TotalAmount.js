@@ -6,10 +6,10 @@ import {
   INCREASE_AMOUNT,
   MIN_NUMBER_PEOPLE,
   MAX_NUMBER_PEOPLE,
-} from '../../../../constants/exchange.constants'
+} from '../../../../constants/casino.constants'
 import { formatter } from '../../../../utils'
-import PropTypes from 'prop-types'
 
+// eslint-disable-next-line react/prop-types
 function DrawCreateTotalAmount({ table }) {
   const { values, setFieldValue } = useFormikContext()
 
@@ -41,6 +41,7 @@ function DrawCreateTotalAmount({ table }) {
         -
       </div>
       <div className="casino-draw__counter--middle">
+        {/* eslint-disable-next-line react/prop-types */}
         <strong>{formatter.format(table.cost * values.prizesCount).replace('₽', 'ST')}</strong>
       </div>
       <div className="casino-draw__counter--up" onClick={handleTotalPriceUp}>
@@ -51,7 +52,5 @@ function DrawCreateTotalAmount({ table }) {
     '-'
   )
 }
-DrawCreateTotalAmount.propTypes = {
-  table: PropTypes.string.isRequired,
-}
+
 export default DrawCreateTotalAmount

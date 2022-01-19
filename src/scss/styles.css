@@ -16297,15 +16297,6 @@ video {
   justify-content: center;
   margin-bottom: 20px
 }
-.startrek__title1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 3.5rem;
-  color: #00ff2b;
-}
 
 .startrek__title img {
   display: block;
@@ -17054,7 +17045,7 @@ video {
   font-family: "Raleway",sans-serif;
   line-height: 1;
   font-size: 14px;
-  font-weight: 1500;
+  font-weight: 1000;
   position: -ms-device-fixed;
   overflow-x: hidden;
   color: #fff;
@@ -17510,7 +17501,7 @@ video {
 
 @media (max-width: 550px) {
   .page .main-banner {
-    width: 100%;
+
     padding:35px 5px
   }
 }

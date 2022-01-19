@@ -1,4 +1,4 @@
-import * as ActionTypes from '../constants/exchange.constants'
+import * as ActionTypes from '../constants/casino.constants'
 
 /* Casino Draw Prizes */
 export const casinoDrawPrizes = () => ({
@@ -41,11 +41,6 @@ export const casinoDrawBuyError = (error) => ({
   payload: error,
 })
 
-/* Casino Draw Cancel */
-export const casinoDrawCancel = (drawId) => ({
-  type: ActionTypes.CASINO_DRAW_CANCEL_REQUEST,
-  payload: { id: drawId },
-})
 export const casinoDrawCancelSuccess = () => ({
   type: ActionTypes.CASINO_DRAW_CANCEL_SUCCESS,
 })
@@ -65,20 +60,6 @@ export const casinoDrawSuccess = (draw) => ({
 })
 export const casinoDrawError = (error) => ({
   type: ActionTypes.CASINO_DRAW_ERROR,
-  payload: error,
-})
-
-/* Casino Draw My */
-export const casinoDrawMy = (drawId) => ({
-  type: ActionTypes.CASINO_DRAW_MY_REQUEST,
-  payload: drawId,
-})
-export const casinoDrawMySuccess = (draw) => ({
-  type: ActionTypes.CASINO_DRAW_MY_SUCCESS,
-  payload: draw,
-})
-export const casinoDrawMyError = (error) => ({
-  type: ActionTypes.CASINO_DRAW_MY_ERROR,
   payload: error,
 })
 
@@ -104,10 +85,6 @@ export const setCasinoActiveListSearch = (search) => ({
   type: ActionTypes.SET_CASINO_ACTIVE_LIST_SEARCH,
   payload: { search },
 })
-export const setCasinoActiveCurrentDraw = (draw) => ({
-  type: ActionTypes.SET_CASINO_ACTIVE_CURRENT_DRAW,
-  payload: draw,
-})
 
 /* Casino Ended List */
 export const casinoEndedList = () => ({
@@ -126,10 +103,6 @@ export const casinoEndedListError = (error) => ({
 export const setCasinoEndedListPage = (page) => ({
   type: ActionTypes.SET_CASINO_ENDED_LIST_PAGE,
   payload: { page },
-})
-export const setCasinoEndedIsMy = (value) => ({
-  type: ActionTypes.SET_CASINO_ENDED_IS_MY,
-  payload: value,
 })
 
 export const toggleCasinoDrawCreateModal = (visible) => ({

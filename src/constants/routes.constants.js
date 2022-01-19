@@ -22,7 +22,7 @@ const r = Object.freeze({
   tableQueue: '/table/:type/queue',
   personalSSTable: '/personal-super-star-table/:type',
   ssTable: '/super-star-table/:id',
-  exchange: '/exchange/IDR:BTC',
+  exchange: '/exchange',
   starTrek: '/startrek',
   starTrekPlanets: '/startrek/planets',
   starTrekStatistic: '/startrek/statistic',

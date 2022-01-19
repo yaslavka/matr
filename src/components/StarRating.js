@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
+// eslint-disable-next-line react/prop-types
 const Star = ({ status, size, onClick }) => {
   return (
     <li onClick={onClick} className={classnames({ interactive: onClick })}>
@@ -24,13 +25,13 @@ const Star = ({ status, size, onClick }) => {
 Star.propTypes = {
   size: PropTypes.number,
   onClick: PropTypes.func,
-  status: PropTypes.func,
 }
 
 Star.defaultProps = {
   size: 21,
 }
 
+// eslint-disable-next-line react/prop-types
 function StarRating({ max, rating, matrix, size, rtl, onClick, className }) {
   const array =
     matrix ||
@@ -65,7 +66,6 @@ StarRating.propTypes = {
   rating: PropTypes.number,
   className: PropTypes.string,
   rtl: PropTypes.bool,
-  onClick: PropTypes,
 }
 
 StarRating.defaultProps = {

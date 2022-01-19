@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button as ButtonComponent, Spinner } from 'reactstrap'
 import classnames from 'classnames'
-import PropTypes from 'prop-types'
 
+// eslint-disable-next-line react/prop-types
 const Button = ({ children, loading, block, ...rest }) => (
   <ButtonComponent {...rest} block={block}>
     {!(block && !loading) && (
@@ -29,9 +29,5 @@ const Button = ({ children, loading, block, ...rest }) => (
     )}
   </ButtonComponent>
 )
-Button.propTypes = {
-  children: PropTypes.string.isRequired,
-  loading: PropTypes.string.isRequired,
-  block: PropTypes.string.isRequired,
-}
+
 export default Button

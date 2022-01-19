@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { YMInitializer } from 'react-yandex-metrika'
-import { BrowserRouter as Router, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { Provider } from 'react-redux'
 
@@ -25,31 +25,23 @@ dayjs.extend(isBetween)
 dayjs.extend(timezone)
 dayjs.extend(utc)
 
-let __PERFORMANCE_DEVTOOL__
-if (__PERFORMANCE_DEVTOOL__) {
-  const { registerObserver } = require('react-perf-devtool')
-  registerObserver()
-}
-
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Router>
-        <App history={history} />
-        <ToastContainer />
-        {process.env.REACT_APP_ENV === 'production' && (
-          <YMInitializer
-            accounts={[83436040]}
-            options={{
-              accurateTrackBounce: true,
-              trackLinks: true,
-              clickmap: true,
-              webvisor: true,
-            }}
-            version="2"
-          />
-        )}
-      </Router>
+      <App history={history} />
+      <ToastContainer />
+      {process.env.REACT_APP_ENV === 'production' && (
+        <YMInitializer
+          accounts={[83436040]}
+          options={{
+            accurateTrackBounce: true,
+            trackLinks: true,
+            clickmap: true,
+            webvisor: true,
+          }}
+          version="2"
+        />
+      )}
     </BrowserRouter>
   </Provider>,
   document.getElementById('root'),

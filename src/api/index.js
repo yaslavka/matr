@@ -62,7 +62,9 @@ export const api = {
   getUserInfo() {
     return baseInstance.get('/user')
   },
-
+  updateAvatar(avatar) {
+    return baseInstance.post('/user/avatar', createFormDataObj({ avatar }))
+  },
   searchUserByLogin({ user_name, matrix_type }) {
     return baseInstance.get(`/user/find?user_name=${user_name}&matrix_type=${matrix_type}`)
   },
@@ -159,10 +161,6 @@ export const api = {
   },
   createComment(text) {
     return baseInstance.post('/school/create-comment', { text })
-  },
-  //Landing
-  getLandingInfo() {
-    return baseInstance.post('/landing-info')
   },
   // News
   getNewsList({ limit, offset }) {
