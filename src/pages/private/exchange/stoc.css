@@ -1,0 +1,102 @@
+.col_1 {
+  width: 45%;
+  float: left;
+}
+.buy_box {
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.fild_box {
+  padding: 16px 19px 20px;
+}
+.fild_box .inset {
+  margin: 0 auto;
+}
+* {
+  outline: none;
+}
+
+таблица стилей агента пользователя
+input[type="hidden" i] {
+  appearance: none;
+  background-color: initial;
+  cursor: default;
+  display: none !important;
+  padding: initial;
+  border: initial;
+}
+input {
+  -webkit-writing-mode: horizontal-tb !important;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-weight: ;
+  font-stretch: ;
+  font-size: ;
+  font-family: ;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  margin: 0em;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+.fild_box .meta {
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.buy_box .title {
+  background-position: 0 -225px;
+  color: #25b02b;
+  line-height: 20px;
+  float: left;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.all_title {
+  background: url(images/content_ico.png) no-repeat scroll 0 0;
+  padding-left: 28px;
+  margin-left: 19px;
+  color: #0aadef;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+.fild_box .meta .sm {
+  float: right;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ff0000;
+}
+.fild_box .inset .line_first {
+  overflow: hidden;
+  color: #ff0000;
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+.fild_box .inset .line_first .c1 {
+  float: left;
+}
+.fild_box .inset .line_first .c2 {
+  float: right;
+  color: #0aadef;
+  text-decoration: none;
+}

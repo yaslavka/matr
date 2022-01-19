@@ -44,11 +44,11 @@ baseInstance.interceptors.response.use(
 export const api = {
   // Auth
   createClient() {
-    return baseInstance.get('/api/v1/create-client')
+    return baseInstance.get('/create-client')
   },
   signIn(credentials) {
     return baseInstance.post(
-      '/api/v1/oauth/v2/token',
+      '/oauth/v2/token',
       createFormDataObj({ ...credentials, grant_type: 'password' }),
     )
   },
@@ -60,105 +60,105 @@ export const api = {
   },
   // User
   getUserInfo() {
-    return baseInstance.get('/api/v1/user')
+    return baseInstance.get('/user')
   },
 
   searchUserByLogin({ user_name, matrix_type }) {
-    return baseInstance.get(`/api/v1/user/find?user_name=${user_name}&matrix_type=${matrix_type}`)
+    return baseInstance.get(`/user/find?user_name=${user_name}&matrix_type=${matrix_type}`)
   },
   // Matrices
   getMatrixTypes() {
-    return baseInstance.get('/api/v1/matrix/type')
+    return baseInstance.get('/matrix/type')
   },
   getMatrixCloneStatTypes() {
-    return baseInstance.get('/api/v1/matrix/clone-stat')
+    return baseInstance.get('/matrix/clone-stat')
   },
   getMatrixStructureByType(type) {
-    return baseInstance.get(`/api/v1/matrix/structure?matrix_type=${type}`)
+    return baseInstance.get(`/matrix/structure?matrix_type=${type}`)
   },
   getMatrixStructureById(id) {
-    return baseInstance.get(`/api/v1/matrix/structure?matrix_id=${id}`)
+    return baseInstance.get(`/matrix/structure?matrix_id=${id}`)
   },
   buyMatrix(matrix_id) {
-    return baseInstance.post('/api/v1/matrix/buy', { matrix_id })
+    return baseInstance.post('/matrix/buy', { matrix_id })
   },
   getMatrixListForInstall(matrix_type) {
-    return baseInstance.get(`/api/v1/matrix/for-install?matrix_type=${matrix_type}`)
+    return baseInstance.get(`/matrix/for-install?matrix_type=${matrix_type}`)
   },
   installMatrix(matrixInfo) {
-    return baseInstance.post('/api/v1/matrix/install', matrixInfo)
+    return baseInstance.post('/matrix/install', matrixInfo)
   },
   getMatrixClonesCout(matrix_type) {
-    return baseInstance.get(`/api/v1/matrix/clone?matrix_type=${matrix_type}`)
+    return baseInstance.get(`/matrix/clone?matrix_type=${matrix_type}`)
   },
   arrangeMatrixClones(matrixClonesInfo) {
-    return baseInstance.post('/api/v1/matrix/install-clone', matrixClonesInfo)
+    return baseInstance.post('/matrix/install-clone', matrixClonesInfo)
   },
   getNeighboringMatrices(matrixType) {
-    return baseInstance.get(`/api/v1/matrix/dash-info?matrix_type=${matrixType}`)
+    return baseInstance.get(`/matrix/dash-info?matrix_type=${matrixType}`)
   },
   setClone(matrixInfo) {
-    return baseInstance.post('/api/v1/matrix/target-install-clone', matrixInfo)
+    return baseInstance.post('/matrix/target-install-clone', matrixInfo)
   },
   // Auto matrices
   getAutoMatrixTypes() {
-    return baseInstance.get('/api/v1/matrix/auto/type')
+    return baseInstance.get('/matrix/auto/type')
   },
   getAutoMatrixStructureByType(type) {
-    return baseInstance.get(`/api/v1/matrix/auto/structure?matrix_type=${type}`)
+    return baseInstance.get(`/matrix/auto/structure?matrix_type=${type}`)
   },
   getAutoMatrixStructureById(id) {
-    return baseInstance.get(`/api/v1/matrix/auto/structure?matrix_id=${id}`)
+    return baseInstance.get(`/matrix/auto/structure?matrix_id=${id}`)
   },
   buyAutoMatrix(matrix_id) {
-    return baseInstance.post('/api/v1/matrix/auto/buy', { matrix_id })
+    return baseInstance.post('/matrix/auto/buy', { matrix_id })
   },
   getAutoMatrixListForInstall(matrix_type) {
-    return baseInstance.get(`/api/v1/matrix/auto/for-install?matrix_type=${matrix_type}`)
+    return baseInstance.get(`/matrix/auto/for-install?matrix_type=${matrix_type}`)
   },
   installAutoMatrix(matrixInfo) {
-    return baseInstance.post('/api/v1/matrix/auto/install', matrixInfo)
+    return baseInstance.post('/matrix/auto/install', matrixInfo)
   },
   getAutoMatrixClonesCout(matrix_type) {
-    return baseInstance.get(`/api/v1/matrix/auto/clone?matrix_type=${matrix_type}`)
+    return baseInstance.get(`/matrix/auto/clone?matrix_type=${matrix_type}`)
   },
   arrangeAutoMatrixClones(matrixClonesInfo) {
-    return baseInstance.post('/api/v1/matrix/auto/install-clone', matrixClonesInfo)
+    return baseInstance.post('/matrix/auto/install-clone', matrixClonesInfo)
   },
   getNeighboringAutoMatrices(matrixType) {
-    return baseInstance.get(`/api/v1/matrix/auto/dash-info?matrix_type=${matrixType}`)
+    return baseInstance.get(`/matrix/auto/dash-info?matrix_type=${matrixType}`)
   },
   setAutoClone(matrixInfo) {
-    return baseInstance.post('/api/v1/matrix/auto/target-install-clone', matrixInfo)
+    return baseInstance.post('/matrix/auto/target-install-clone', matrixInfo)
   },
   getUpperAutoStructureById(matrixId) {
-    return baseInstance.get(`/api/v1/matrix/auto/structure-upper?matrix_id=${matrixId}`)
+    return baseInstance.get(`/matrix/auto/structure-upper?matrix_id=${matrixId}`)
   },
   // Wallet
   getTransactionsHistory({ limit, offset }) {
-    return baseInstance.get(`/api/v1/wallet/transactions?limit=${limit}&offset=${offset}`)
+    return baseInstance.get(`/wallet/transactions?limit=${limit}&offset=${offset}`)
   },
   createWithdraw(withdrawInfo) {
-    return baseInstance.post('/api/v1/wallet/create-withdraw', withdrawInfo)
+    return baseInstance.post('/wallet/create-withdraw', withdrawInfo)
   },
   createPay(payInfo) {
-    return baseInstance.post('/api/v1/wallet/create-pay', payInfo)
+    return baseInstance.post('/wallet/create-pay', payInfo)
   },
   createPayeerPay(payInfo) {
-    return baseInstance.post('/api/v1/wallet/create-payeer-pay', payInfo)
+    return baseInstance.post('/wallet/create-payeer-pay', payInfo)
   },
   getUpperStructureById(matrixId) {
-    return baseInstance.get(`/api/v1/matrix/structure-upper?matrix_id=${matrixId}`)
+    return baseInstance.get(`/matrix/structure-upper?matrix_id=${matrixId}`)
   },
   // School
   getComments() {
-    return baseInstance.get('/api/v1/school/comments')
+    return baseInstance.get('/school/comments')
   },
   createRequestToSchool(data) {
-    return baseInstance.post('/api/v1/school/create', data)
+    return baseInstance.post('/school/create', data)
   },
   createComment(text) {
-    return baseInstance.post('/api/v1/school/create-comment', { text })
+    return baseInstance.post('/school/create-comment', { text })
   },
   //Landing
   getLandingInfo() {
@@ -166,35 +166,35 @@ export const api = {
   },
   // News
   getNewsList({ limit, offset }) {
-    return baseInstance.get(`/api/v1/news/get?offset=${offset}&limit=${limit}`)
+    return baseInstance.get(`/news/get?offset=${offset}&limit=${limit}`)
   },
   getNewsById(id) {
-    return baseInstance.get(`/api/v1/news/get-one?news_id=${id}`)
+    return baseInstance.get(`/news/get-one?news_id=${id}`)
   },
 
   /* SUPER STARS */
   ssBuyMatrix(matrix_id) {
-    return baseInstance.post('/api/v1/matrix/super/buy', { matrix_id })
+    return baseInstance.post('/matrix/super/buy', { matrix_id })
   },
   ssMatrixTypes() {
-    return baseInstance.get('/api/v1/matrix/super/type')
+    return baseInstance.get('/matrix/super/type')
   },
   ssMatrixClones(matrix_type) {
-    return baseInstance.get(`/api/v1/matrix/super/clone?matrix_type=${matrix_type}`)
+    return baseInstance.get(`/matrix/super/clone?matrix_type=${matrix_type}`)
   },
   ssMatrixStructureByType(type) {
-    return baseInstance.get(`/api/v1/matrix/super/structure?matrix_type=${type}`)
+    return baseInstance.get(`/matrix/super/structure?matrix_type=${type}`)
   },
   ssMatrixStructureById(id) {
-    return baseInstance.get(`/api/v1/matrix/super/structure?matrix_id=${id}`)
+    return baseInstance.get(`/matrix/super/structure?matrix_id=${id}`)
   },
   ssInstallMatrixClones(matrixClonesInfo) {
-    return baseInstance.post('/api/v1/matrix/super/install-clone', matrixClonesInfo)
+    return baseInstance.post('/matrix/super/install-clone', matrixClonesInfo)
   },
   ssBuyMatrixClones(matrixClonesInfo) {
-    return baseInstance.post('/api/v1/matrix/super/buy-comet', matrixClonesInfo)
+    return baseInstance.post('/matrix/super/buy-comet', matrixClonesInfo)
   },
   ssNeighboringMatrices(matrixType) {
-    return baseInstance.get(`/api/v1/matrix/super/dash-info?matrix_type=${matrixType}`)
+    return baseInstance.get(`/matrix/super/dash-info?matrix_type=${matrixType}`)
   },
 }

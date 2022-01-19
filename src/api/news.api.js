@@ -1,13 +1,12 @@
 import { baseInstance } from './index'
 
-export const getNewsList = (params) =>
-  baseInstance({ url: '/api/v1/news/get', method: 'get', params })
+export const getNewsList = (params) => baseInstance({ url: '/news/get', method: 'get', params })
 
 export const getNewsId = (id) =>
   baseInstance({
-    url: `/api/v1/news/get-one`,
+    url: `/news/get-one`,
     method: 'get',
     params: { news_id: id },
   })
 
-export const getNewsBlock = () => baseInstance({ url: `/api/v1/news/get-block`, method: 'get' })
+export const getNewsBlock = () => baseInstance({ url: `/news/get-block`, method: 'get' })

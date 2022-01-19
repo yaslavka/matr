@@ -155,7 +155,7 @@ const TableQueue = ({ location: { state = {} } }) => {
                         style={{
                           backgroundImage: `url(${
                             user.photo
-                              ? `${process.env.REACT_APP_BASE_URL}/api/v1/getFile/avatar/${user.photo}`
+                              ? `${process.env.REACT_APP_BASE_URL}/getFile/avatar/${user.photo}`
                               : avatarFallback
                           })`,
                         }}

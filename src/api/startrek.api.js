@@ -1,19 +1,17 @@
 import { baseInstance } from './index'
 
-export const startrekStatistics = () =>
-  baseInstance({ url: '/api/v1/star-trek/statistic', method: 'get' })
+export const startrekStatistics = () => baseInstance({ url: '/star-trek/statistic', method: 'get' })
 
-export const startrekStatistic = () =>
-  baseInstance({ url: '/api/v1/star-trek/table', method: 'get' })
+export const startrekStatistic = () => baseInstance({ url: '/star-trek/table', method: 'get' })
 
-export const startrekBuy = () => baseInstance({ url: '/api/v1/star-trek/buy', method: 'post' })
+export const startrekBuy = () => baseInstance({ url: '/star-trek/buy', method: 'post' })
 
 export const startrekPlanets = (params) =>
-  baseInstance({ url: '/api/v1/star-trek/list', method: 'get', params })
+  baseInstance({ url: '/star-trek/list', method: 'get', params })
 
 export const startrekPlanetsUpdate = (planets) =>
   baseInstance({
-    url: '/api/v1/star-trek/update',
+    url: '/star-trek/update',
     method: 'post',
     data: { planets },
   })

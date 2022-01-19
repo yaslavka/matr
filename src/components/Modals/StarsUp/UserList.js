@@ -82,7 +82,7 @@ const UserList = ({ structureObj }) => {
                       style={{
                         backgroundImage: `url(${
                           user.avatar
-                            ? `${process.env.REACT_APP_BASE_URL}/api/v1/getFile/avatar/${user.avatar}`
+                            ? `${process.env.REACT_APP_BASE_URL}/getFile/avatar/${user.avatar}`
                             : avatarFallback
                         })`,
                       }}
