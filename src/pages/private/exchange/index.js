@@ -3089,12 +3089,6 @@ const Exchange = ({ priceSell }) => {
                     <a href="javascript:void(0)" value="doge" onClick="changeMarketBase('doge')">
                       DOGE
                     </a>
-                    <a href="javascript:void(0)" value="yo" onClick="changeMarketBase('yo')">
-                      YO
-                    </a>
-                    <a href="javascript:void(0)" value="waves" onClick="changeMarketBase('waves')">
-                      W
-                    </a>
                     <a
                       href="javascript:void(0)"
                       value="usd"
@@ -3106,31 +3100,8 @@ const Exchange = ({ priceSell }) => {
                     <a href="javascript:void(0)" value="rur" onClick="changeMarketBase('rur')">
                       RUR
                     </a>
-                    <a href="javascript:void(0)" value="usdt" onClick="changeMarketBase('usdt')">
-                      USDT
-                    </a>
                   </div>
                   <div className="clear"></div>
-                  <div className="down" margin-top={'2px'}>
-                    <a
-                      href="javascript:void(0)"
-                      value="defi"
-                      onClick="changeMarketBase('defi')"
-                      className="manimg"
-                    >
-                      DEFI
-                    </a>
-                  </div>
-                  <div className="down" margin-top={'2px'}>
-                    <a
-                      href="javascript:void(0)"
-                      value="bridge"
-                      onClick="changeMarketBase('bridge')"
-                      className=""
-                    >
-                      BRIDGE
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
