@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react'
 import formatCurrency from 'format-currency'
 import { Button, Input } from 'reactstrap'
 import OrderBooc from '../../orderBook/OrderBooc'
+import BalanceSell from '../../Balance/BalanceSell'
 
 const SellFormComponent = ({ priceSell }) => {
   const optsIDR = { format: '%v %c', code: 'IDR' }
@@ -33,12 +34,7 @@ const SellFormComponent = ({ priceSell }) => {
               0.07644793
             </div>
           </div>
-          <div className="line_first">
-            <span className="c1">Баланс:</span>
-            <a href="javascript:void(0)" className="c2 clSellBalance">
-              <span id="label_sell_balance">0.00000000</span> ETH
-            </a>
-          </div>
+          <BalanceSell />
           <div className="line">
             <span>Количество:</span>
             <div className="poles">
