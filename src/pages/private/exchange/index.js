@@ -22,8 +22,8 @@ const Exchange = () => {
           <Chart />
           <BuyFormComponent />
           <SellFormComponent />
-          <Market />
           <HistoriBuySel />
+          <Market />
         </Col>
       </Row>
     </Container>

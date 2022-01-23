@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { formatter } from '../../../../../utils'
 import { useDispatch, useSelector } from 'react-redux'
 import * as actions from '../../../../../actions/finance.actions'
+import { Button } from 'reactstrap'
 
 // eslint-disable-next-line react/prop-types
 const Balance = ({ Balnce }) => {
@@ -33,6 +34,7 @@ const Balance = ({ Balnce }) => {
   useEffect(() => {
     setPriceValue(Balnce)
   }, [Balnce])
+
   return (
     <div>
       {userInfo && (
@@ -40,20 +42,19 @@ const Balance = ({ Balnce }) => {
           <div className="line_first">
             <span className="c1">Баланс:</span>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid,no-script-url */}
-            <a
-              href="javascript:void(0)"
-              className="c2 clBuyBalance"
-              onClick={(event) => {
-                setTotalValue(event.target.value)
-              }}
-              value={totalValue}
-            >
-              <span id="label_buy_balance">
+            <Button className="c2 clBuyBalance">
+              <span
+                id="label_buy_balance"
+                onChange={() => (event) => {
+                  setTotalValue(event.target.value)
+                }}
+                onClick={totalValue}
+              >
                 {formatter
                   .format((userInfo.balance > -1 && userInfo.balance) || 0.0)
                   .replace('₽', 'BTC')}
               </span>{' '}
-            </a>
+            </Button>
             <br />
           </div>
         </>

@@ -6,7 +6,7 @@ AOS.refresh()
 function Banner() {
   return (
     <div className="main-banner main-banner__logo" data-aos="flip-left">
-      <img src={Banne} alt={Banne} width="1165" height="200" />
+      <img src={Banne} alt={Banne} width="100%" height="200" />
     </div>
   )
 }
