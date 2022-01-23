@@ -34,7 +34,7 @@ const Balance = ({ Balnce }) => {
   useEffect(() => {
     setPriceValue(Balnce)
   }, [Balnce])
-
+  const [totalBalanse, setTotalBalanse] = useState('Anil')
   return (
     <div>
       {userInfo && (
@@ -45,10 +45,9 @@ const Balance = ({ Balnce }) => {
             <Button className="c2 clBuyBalance">
               <span
                 id="label_buy_balance"
-                onChange={() => (event) => {
-                  setTotalValue(event.target.value)
+                onClick={(event) => {
+                  setTotalBalanse(event.target.value)
                 }}
-                onClick={totalValue}
               >
                 {formatter
                   .format((userInfo.balance > -1 && userInfo.balance) || 0.0)

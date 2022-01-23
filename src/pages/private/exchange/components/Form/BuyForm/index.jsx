@@ -20,7 +20,7 @@ const BuyFormComponent = ({ priceBuy }) => {
   useEffect(() => {
     setPriceValue(priceBuy)
   }, [priceBuy])
-
+  const [totalBalanse, setTotalBalanse] = useState('Anil')
   return (
     <div className="col_1">
       <div className="buy_box fild_box">
@@ -44,6 +44,7 @@ const BuyFormComponent = ({ priceBuy }) => {
                 min={0}
                 onChange={(event) => {
                   setTotalValue(event.target.value)
+                  setTotalBalanse(event.target.value)
                 }}
                 value={totalValue}
               />
@@ -61,6 +62,7 @@ const BuyFormComponent = ({ priceBuy }) => {
                   setPriceValue(event.target.value)
                 }}
                 value={priceValue}
+                aria-valuemax={totalBalanse}
               />
               <span className="currency">BTC</span>
             </div>
@@ -75,8 +77,10 @@ const BuyFormComponent = ({ priceBuy }) => {
                 min={0}
                 onChange={(event) => {
                   setTotalValue(event.target.value)
+                  setTotalBalanse(event.target.value)
                 }}
                 value={totalValue}
+                aria-valuemax={totalBalanse}
               />
               <span className="currency">BTC</span>
             </div>

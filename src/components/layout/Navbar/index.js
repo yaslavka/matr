@@ -40,19 +40,25 @@ const navbarLinks = [
     icon: news,
   },
   {
-    label: 'Stars',
+    label: 'MATRIX',
     route: routes.tables,
     isDisabled: false,
     icon: logo,
   },
   {
-    label: 'Premium Stars',
+    label: 'Matrix2',
     route: routes.premiumStars,
     isDisabled: false,
     icon: car,
   },
   {
-    label: 'Super Stars',
+    label: 'Matrix3',
+    route: routes.starTrek,
+    isDisabled: false,
+    icon: logo,
+  },
+  {
+    label: 'Matrix Reloaded',
     route: routes.superStars,
     isDisabled: false,
     icon: superstar,
@@ -64,13 +70,7 @@ const navbarLinks = [
     icon: luckyStar,
   },
   {
-    label: 'Star Trek',
-    route: routes.starTrek,
-    isDisabled: false,
-    icon: logo,
-  },
-  {
-    label: 'Stars Up',
+    label: 'Investbox',
     route: routes.starsUp,
     isDisabled: false,
     icon: starsUp,
