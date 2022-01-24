@@ -25,6 +25,8 @@ import Finances from './pages/private/Finances'
 import Team from './pages/private/Team'
 import Education from './pages/private/Education'
 import Settings from './pages/private/Settings'
+import Myinvest from './pages/private/StarsUp/component/Myinvest'
+import Histori from './pages/private/StarsUp/component/Histori'
 
 export const publicRouteConfig = [
   {
@@ -136,6 +138,18 @@ export const panelRouteConfig = [
     id: 'bb41be1a-b5a0-4502-a06b-a338ea47904d',
     path: r.starsUp,
     component: StarsUp,
+    exact: true,
+  },
+  {
+    id: 'd321bf61-e67a-4809-9dd9-d8a425917178',
+    path: r.myinvestments,
+    component: Myinvest,
+    exact: true,
+  },
+  {
+    id: 'investbox_pack_history_table_wrapper',
+    path: r.investbox,
+    component: Histori,
     exact: true,
   },
   {

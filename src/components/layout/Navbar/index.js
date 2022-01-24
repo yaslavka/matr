@@ -53,15 +53,15 @@ const navbarLinks = [
   },
   {
     label: 'Matrix3',
-    route: routes.starTrek,
-    isDisabled: false,
-    icon: logo,
-  },
-  {
-    label: 'Matrix Reloaded',
     route: routes.superStars,
     isDisabled: false,
     icon: superstar,
+  },
+  {
+    label: 'Matrix Reloaded',
+    route: routes.starTrek,
+    isDisabled: false,
+    icon: logo,
   },
   {
     label: 'exchange',
