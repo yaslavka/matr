@@ -40,9 +40,6 @@ function SuperStars() {
       <Container>
         <Row>
           <Col className="d-none d-xl-block" xl={3}>
-            <div className={styles.userInfo}>
-              <UserInfo />
-            </div>
             <NavBar />
           </Col>
           <Col xl={9}>
@@ -50,7 +47,9 @@ function SuperStars() {
               <div className="circle__container">
                 <div className="circle__center">
                   <div className="circle__center-content">
-                    <img src={logo} alt="Super Stars" />
+                    <div className={styles.userInfo}>
+                      <UserInfo />
+                    </div>
                   </div>
                 </div>
                 {matrixTypes.map((matrix, i) => {
@@ -60,54 +59,12 @@ function SuperStars() {
                   return (
                     <TablesElement
                       key={i.toString()}
-                      urlPrefix="personal-super-star-table"
+                      urlPrefix="MATRIX3-table"
                       transform={transform}
                       matrix={matrix}
                     />
                   )
                 })}
-              </div>
-            </div>
-            <div className="pdf-preview">
-              <h2 className="pdf-preview__title">Презентации</h2>
-              <div className="pdf-preview__container">
-                <div className="pdf-preview__picture">
-                  <img src={pdfPreview} alt="Stars" />
-                </div>
-                <div className="pdf-preview__download">
-                  <ul>
-                    <li>
-                      <a href={pptRU} download>
-                        <Icon iconName="download" />
-                        Скачать RU
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptEN} download>
-                        <Icon iconName="download" />
-                        Download EN
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptKZ} download>
-                        <Icon iconName="download" />
-                        Жүктеу KZ
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptMN} download>
-                        <Icon iconName="download" />
-                        Татаж авах MN
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptES} download>
-                        <Icon iconName="download" />
-                        Descargar ES
-                      </a>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
           </Col>

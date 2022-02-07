@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import styles from './AboutUs.module.scss'
 
 import NavBar from '../../../components/layout/Navbar'
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 
 export default function AboutUs() {
   return (
@@ -13,9 +13,7 @@ export default function AboutUs() {
       <Container>
         <Row>
           <Col xl={3} className="d-none d-xl-block">
-            <div className={styles.userInfo}>
-              <UserInfo />
-            </div>
+            <div className={styles.userInfo}></div>
             <div className="d-none d-xl-block">
               <NavBar />
             </div>

@@ -11,7 +11,7 @@ import { api } from '../../../api'
 import routes from '../../../constants/routes.constants'
 
 import Button from '../../../components/OldButton'
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 import NavBar from '../../../components/layout/Navbar'
 import CreateComment from './CreateComment'
 import FillForm from './FillForm'
@@ -165,9 +165,7 @@ export default function Education() {
       <Container>
         <Row>
           <Col className="d-none d-xl-block" xl={3}>
-            <div className={styles.userInfo}>
-              <UserInfo />
-            </div>
+            <div className={styles.userInfo}></div>
             <NavBar />
           </Col>
           <Col xs={12} xl={9} className="position-static">

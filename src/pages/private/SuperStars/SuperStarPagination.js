@@ -34,7 +34,7 @@ function SuperStarPagination({ items, currentId }) {
     // eslint-disable-next-line react/prop-types
     const elem = items.find((e) => e.page === page)
     if (elem) {
-      history.push(`/super-star-table/${elem.value}`)
+      history.push(`/MATRIX3-table/${elem.value}`)
     }
 
     setCurrentPage(page)

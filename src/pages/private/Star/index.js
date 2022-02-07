@@ -4,20 +4,20 @@ import { useDispatch } from 'react-redux'
 import isEmpty from 'lodash/isEmpty'
 
 import { matrixActions } from '../../../store/matrix/actions'
-import logo from '../../../scss/media/logo-text.a2a64ad6.svg'
-import pdfPreview from '../../../scss/media/pdf-preview-stars.830beffd.jpg'
-import pptRU from '../../../static/documents/star/Новый текстовый документ.txt'
-import pptMN from '../../../static/documents/star/Новый текстовый документ.txt'
-import pptKZ from '../../../static/documents/star/Новый текстовый документ.txt'
-import pptES from '../../../static/documents/star/Новый текстовый документ.txt'
-import pptEN from '../../../static/documents/star/Новый текстовый документ.txt'
+//import logo from '../../../scss/media/logo-text.a2a64ad6.svg'
+//import pdfPreview from '../../../scss/media/pdf-preview-stars.830beffd.jpg'
+//import pptRU from '../../../static/documents/star/Новый текстовый документ.txt'
+//import pptMN from '../../../static/documents/star/Новый текстовый документ.txt'
+//import pptKZ from '../../../static/documents/star/Новый текстовый документ.txt'
+//import pptES from '../../../static/documents/star/Новый текстовый документ.txt'
+//import pptEN from '../../../static/documents/star/Новый текстовый документ.txt'
 import styles from './Tables.module.scss'
 import { api } from '../../../api'
 
 import TablesElement from './TablesElement'
 import NavBar from '../../../components/layout/Navbar'
 import UserInfo from '../../../components/UserInfo'
-import Icon from '../../../components/Icon'
+//import Icon from '../../../components/Icon'
 
 function Tables() {
   const dispatch = useDispatch()
@@ -50,9 +50,6 @@ function Tables() {
       <Container>
         <Row>
           <Col className="d-none d-xl-block" xl={3}>
-            <div className={styles.userInfo}>
-              <UserInfo />
-            </div>
             <NavBar />
           </Col>
           <Col xl={9}>
@@ -60,7 +57,9 @@ function Tables() {
               <div className="circle__container">
                 <div className="circle__center">
                   <div className="circle__center-content">
-                    <img src={logo} alt="Stars" />
+                    <div className={styles.userInfo}>
+                      <UserInfo />
+                    </div>
                   </div>
                 </div>
                 {matrixTypes.map((matrix, i) => {
@@ -70,54 +69,12 @@ function Tables() {
                   return (
                     <TablesElement
                       key={i.toString()}
-                      urlPrefix="personal-table"
+                      urlPrefix="MATRIX-table"
                       transform={transform}
                       matrix={matrix}
                     />
                   )
                 })}
-              </div>
-            </div>
-            <div className="pdf-preview">
-              <h2 className="pdf-preview__title">Презентации</h2>
-              <div className="pdf-preview__container">
-                <div className="pdf-preview__picture">
-                  <img src={pdfPreview} alt="Stars" />
-                </div>
-                <div className="pdf-preview__download">
-                  <ul>
-                    <li>
-                      <a href={pptRU} download>
-                        <Icon iconName="download" />
-                        Скачать RU
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptEN} download>
-                        <Icon iconName="download" />
-                        Download EN
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptES} download>
-                        <Icon iconName="download" />
-                        Descargar ES
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptKZ} download>
-                        <Icon iconName="download" />
-                        Жүктеу KZ
-                      </a>
-                    </li>
-                    <li>
-                      <a href={pptMN} download>
-                        <Icon iconName="download" />
-                        Татаж авах MN
-                      </a>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
           </Col>

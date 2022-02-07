@@ -147,7 +147,7 @@ export default function Table({ location: { state = {}, pathname } }) {
     setVisiblePartnerModal(false)
     setTimeout(() => {
       // eslint-disable-next-line react/prop-types
-      if (pathname.startsWith('/personal-table')) {
+      if (pathname.startsWith('/MATRIX2-table')) {
         api
           .getAutoMatrixStructureByType(matrixInfo.id)
           .then((response) => {
@@ -188,14 +188,14 @@ export default function Table({ location: { state = {}, pathname } }) {
           const prevMatrix = matricesList.find((matrix) => matrix.id === matrixInfo.id - 1)
           setIsFetching(true)
           dispatch(matrixActions.saveCurrentMatrix(prevMatrix))
-          history.push(`/personal-premium-table/${matrixInfo.id - 1}`)
+          history.push(`/MATRIX2-table/${matrixInfo.id - 1}`)
         }
       } else {
         if (matrixInfo.id !== 8) {
           const nextMatrix = matricesList.find((matrix) => matrix.id === matrixInfo.id + 1)
           setIsFetching(true)
           dispatch(matrixActions.saveCurrentMatrix(nextMatrix))
-          history.push(`/personal-premium-table/${matrixInfo.id + 1}`)
+          history.push(`/MATRIX2-table/${matrixInfo.id + 1}`)
         }
       }
     }
@@ -212,7 +212,7 @@ export default function Table({ location: { state = {}, pathname } }) {
   }
 
   const redirectToUserMatrix = (matrixId) => {
-    history.push(`/premium-table/${matrixId}`)
+    history.push(`/MATRIX2-table/${matrixId}`)
     setSearchUsers([])
   }
 
@@ -329,7 +329,7 @@ export default function Table({ location: { state = {}, pathname } }) {
         <div className={styles.header}>{backRouteElement}</div>
         <div className={styles.container}>
           <div className={styles.sidebar}>
-            {matrixInfo && <h1 className={styles.title}>AUTO STARS - M{matrixInfo.id}</h1>}
+            {matrixInfo && <h1 className={styles.title}>MATRIX2 - M{matrixInfo.id}</h1>}
             {selectItems && (
               <Select
                 values={selectItems}
@@ -337,7 +337,7 @@ export default function Table({ location: { state = {}, pathname } }) {
                 className={styles.matrixSelect}
                 onChange={(value) => {
                   if (value) {
-                    history.push(`/premium-table/${value}`)
+                    history.push(`/MATRIX2-table/${value}`)
                   }
                 }}
               />
@@ -355,7 +355,7 @@ export default function Table({ location: { state = {}, pathname } }) {
             )}
             {matrixInfo && matrixInfo.canBuy && (
               <div className={styles.footer}>
-                <p className={styles.price}>Цена - {matrixInfo.sum} ST</p>
+                <p className={styles.price}>Цена - {matrixInfo.sum} RUB</p>
                 <Button
                   onClick={showBuyMatrixModal}
                   disabled={buyingStatus.type === 'pending'}
@@ -457,7 +457,7 @@ export default function Table({ location: { state = {}, pathname } }) {
 
             {matrixInfo && matrixInfo.canBuy && (
               <div className={styles.footer}>
-                <p className={styles.price}>Цена - {matrixInfo.sum} ST</p>
+                <p className={styles.price}>Цена - {matrixInfo.sum} RUB</p>
                 <Button
                   onClick={showBuyMatrixModal}
                   disabled={buyingStatus.type === 'pending'}

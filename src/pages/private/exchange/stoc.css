@@ -2854,12 +2854,6 @@ input[type=button].activateYobicode {
   background: #d0d0d0;
 }
 .investbox_page { padding-right:5px; }
-.investbox_page .quote {
-  font-size:14px;
-  line-height:18px;
-  color:#9aa8b9;
-  padding-bottom:10px;
-}
 .investbox_page .create_new2 .poles{
   float:right;
   position:relative;

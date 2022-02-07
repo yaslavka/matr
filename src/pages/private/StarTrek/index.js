@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux'
 import * as actions from '../../../actions/startrek.actions'
 //import previewText from '../../../scss/media/startrek-logo.f688a0a8.svg'
 import NavBar from '../../../components/layout/Navbar'
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 //import Button from '../../../components/Button'
 
 //import Statistics from './Statistics'
@@ -17,7 +17,7 @@ import UserInfo from '../../../components/UserInfo'
 //import Summary from './Summary'
 //import { Spinner } from 'react-bootstrap'
 import CountdownTimer from './CountdownTimer/CountdownTimer'
-import { cibGravatar } from '@coreui/icons'
+//import { cibGravatar } from '@coreui/icons'
 
 function StarTrek() {
   const dispatch = useDispatch()
@@ -45,7 +45,6 @@ function StarTrek() {
     <Container className="root-page">
       <Row>
         <Col xl={3} className="d-none d-xl-block">
-          <UserInfo className={cibGravatar} />
           <NavBar />
         </Col>
         <Col xl={9}>

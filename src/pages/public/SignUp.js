@@ -12,10 +12,10 @@ import * as actions from '../../actions/auth.actions'
 import { api } from '../../api'
 import { isValidEmail, isValidPassword, isValidUsername, isValidPhone } from '../../utils'
 
-import Spinner from '../../components/Spinner'
 import Checkbox from '../../components/Checkbox'
 import InputPhone from '../../components/InputPhone'
 import Input from '../../components/Input'
+import { Spinner } from 'react-bootstrap'
 
 // eslint-disable-next-line react/prop-types
 function SignUp({ location }) {

@@ -397,7 +397,7 @@ export default function Table({ location: { state = {}, pathname } }) {
             )}
             {matrixInfo && (
               <div className={styles.footer}>
-                <p className={styles.price}>Цена - {matrixInfo.sum} ST</p>
+                <p className={styles.price}>Цена - {matrixInfo.sum} RUB</p>
                 {matrixInfo.canBuy && (
                   <Button
                     onClick={showBuyMatrixModal}
@@ -526,7 +526,7 @@ export default function Table({ location: { state = {}, pathname } }) {
 
             {matrixInfo && (
               <div className={styles.footer}>
-                <p className={styles.price}>Цена - {matrixInfo.sum} ST</p>
+                <p className={styles.price}>Цена - {matrixInfo.sum} RUB</p>
                 {matrixInfo.canBuy && (
                   <Button
                     onClick={showBuyMatrixModal}

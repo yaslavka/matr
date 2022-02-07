@@ -7,7 +7,7 @@ import avatar from '../../../scss/media/placeholder.7e85be59.svg'
 import video from '../../../scss/media/leader-poster-video.56a4c9bf.jpg'
 
 import NavBar from '../../../components/layout/Navbar'
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 
 function Leader() {
   const userInfo = useSelector((state) => state.app.user)
@@ -16,7 +16,6 @@ function Leader() {
     <Container className="root-page">
       <Row>
         <Col xl={3} className="d-none d-xl-block">
-          <UserInfo />
           <NavBar />
         </Col>
         <Col>

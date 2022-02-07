@@ -6,7 +6,7 @@ import { Row, Col, Container } from 'reactstrap'
 import * as actions from '../../../actions/news.actions'
 import routes from '../../../constants/routes.constants'
 import NavBar from '../../../components/layout/Navbar'
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 import NewsItemPage from './NewsItemPage'
 import NewsBlock from './NewsBlock'
 import NewsList from './NewsList'
@@ -35,7 +35,6 @@ function News() {
     <Container className="root-page">
       <Row>
         <Col xl={3} className="d-none d-xl-block">
-          <UserInfo />
           <NavBar />
         </Col>
         <Col>

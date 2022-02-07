@@ -28,15 +28,6 @@ function App({ history }) {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
 
   useEffect(() => {
-    const loading = document.querySelector('.loading')
-    const loader = document.querySelector('.loading-progress span')
-    setTimeout(() => {
-      loader.width = '100%'
-      loading.classList.add('end')
-    }, 300)
-  }, [])
-
-  useEffect(() => {
     if (isAuthenticated) {
       dispatch(actions.userInfo())
     }

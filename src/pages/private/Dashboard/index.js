@@ -77,7 +77,6 @@ function Dashboard() {
     <Container className="root-page">
       <Row>
         <Col xl={3} className="d-none d-xl-block">
-          <UserInfo />
           <NavBar />
         </Col>
         <Col>
@@ -113,7 +112,7 @@ function Dashboard() {
                           <div className="list-info__group">
                             <div className="list-info__label">Мой баланс</div>
                             <div className="list-info__value">
-                              {formatter.format(userInfo.balance || 0).replace('₽', 'ST')}
+                              {formatter.format(userInfo.balance || 0).replace('₽', 'RUB')}
                             </div>
                           </div>
                           <div className="list-info__group">
@@ -121,7 +120,7 @@ function Dashboard() {
                             <div className="list-info__value">
                               {formatter
                                 .format(userInfo.transferBalance ? userInfo.transferBalance : 0)
-                                .replace('₽', 'ST')}
+                                .replace('₽', 'RUB')}
                             </div>
                           </div>
                           <div className="list-info__group">
@@ -143,7 +142,7 @@ function Dashboard() {
                             <div className="list-info__value">
                               {formatter
                                 .format(userInfo.income ? userInfo.income : 0)
-                                .replace('₽', 'ST')}
+                                .replace('₽', 'RUB')}
                             </div>
                           </div>
                           <div className="list-info__group">
@@ -202,93 +201,6 @@ function Dashboard() {
                     </div>
                   </Col>
                 </Row>
-
-                <div className="free-information">
-                  <Button
-                    disabled={isLoadingPublish}
-                    className="free-information__download"
-                    onClick={downloadSummary}
-                    color="link"
-                  >
-                    <Icon iconName="download" />
-                  </Button>
-                  <div className="free-information__render" id="user_summary">
-                    <figure className="free-information__avatar">
-                      <img
-                        src={freeInfoAvatar || avatar}
-                        alt={`${userInfo.firstName} ${userInfo.lastName}`}
-                      />
-                    </figure>
-                    <div className="free-information__name">
-                      <div>{userInfo.firstName}</div>
-                      <div>{userInfo.lastName}</div>
-                    </div>
-                    <ul className="free-information__social">
-                      <li>
-                        {userInfo.myInstagram ? (
-                          <a
-                            href={`https://www.instagram.com/${userInfo.myInstagram}`}
-                            rel="noreferrer"
-                            target="_blank"
-                          >
-                            <img
-                              className="free-information__social--image"
-                              src={inImage}
-                              alt={userInfo.myInstagram}
-                            />
-                            {userInfo.myInstagram}
-                          </a>
-                        ) : (
-                          '-'
-                        )}
-                      </li>
-                      <li>
-                        {userInfo.myTg ? (
-                          <a
-                            href={`https://t.me/${userInfo.myTg}`}
-                            rel="noreferrer"
-                            target="_blank"
-                          >
-                            <img
-                              className="free-information__social--image"
-                              src={tgImage}
-                              alt={userInfo.myTg}
-                            />
-                            {userInfo.myTg}
-                          </a>
-                        ) : (
-                          '-'
-                        )}
-                      </li>
-                      <li>
-                        {userInfo.myVk ? (
-                          <a
-                            href={`https://vk.com/${userInfo.myVk}`}
-                            rel="noreferrer"
-                            target="_blank"
-                          >
-                            <img
-                              className="free-information__social--image"
-                              src={vkImage}
-                              alt={userInfo.myVk}
-                            />
-                            {userInfo.myVk}
-                          </a>
-                        ) : (
-                          '-'
-                        )}
-                      </li>
-                    </ul>
-                    <div className="free-information__total">
-                      <div>Общий чек</div>
-                      <strong>
-                        {formatterNumber
-                          .format(userInfo.income ? userInfo.income : 0)
-                          .replace('₽', 'ST')}
-                      </strong>
-                    </div>
-                  </div>
-                </div>
               </>
             )}
           </Spinner>

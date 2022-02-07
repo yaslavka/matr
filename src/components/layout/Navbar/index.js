@@ -76,6 +76,12 @@ const navbarLinks = [
     icon: starsUp,
   },
   {
+    label: 'Казино',
+    route: routes.casino,
+    isDisabled: false,
+    icon: car,
+  },
+  {
     label: 'О нас',
     route: routes.aboutUs,
     isDisabled: false,

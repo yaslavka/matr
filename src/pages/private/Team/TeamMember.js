@@ -86,7 +86,7 @@ function TeamMember({ member }) {
                   matrix={Object.values(superStar)}
                   onClick={(value) => {
                     saveCurrentMatrix(value)
-                    history.push(`/super-star-table/${value.matrixId}`, {
+                    history.push(`/MATRIX3-table/${value.matrixId}`, {
                       useBack: true,
                     })
                   }}

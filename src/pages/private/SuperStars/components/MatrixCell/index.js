@@ -63,7 +63,7 @@ export default function MatrixCell({ place, info, isActive, onDoubleClick }) {
       // eslint-disable-next-line react/prop-types
       if (info && info.id) {
         // eslint-disable-next-line react/prop-types
-        history.push(`/super-star-table/${info.id}`)
+        history.push(`/MATRIX3-table/${info.id}`)
       } else {
         onDoubleClick && onDoubleClick()
       }

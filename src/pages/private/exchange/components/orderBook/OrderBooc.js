@@ -20,7 +20,7 @@ const OrderBooc = () => {
       <div className="scrolling" id="scrollbar4">
         <div className="scrollbar">
           <div className="track">
-            <div className="thumb"></div>
+            <div className="thumb" />
           </div>
         </div>
         <div className="viewport">

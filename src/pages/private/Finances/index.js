@@ -2,12 +2,15 @@ import React, { useState, useCallback } from 'react'
 import { Row, Col, Container, Button } from 'reactstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import { formatter } from '../../../utils'
+import './Balla/jquery.jscrollpane.css'
+import './Balla/messi.min.css'
+import './Balla/ss.css'
 
 import * as actions from '../../../actions/finance.actions'
 import OperationsHistoryModal from './OperationsHistoryModal'
 import MoneyTransferModal from './MoneyTransferModal'
 import NavBar from '../../../components/layout/Navbar'
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 
 import WithdrawalOfMoney from './WithdrawalOfMoney'
 import ReplenishmentOfMoney from './ReplenishmentOfMoney'
@@ -36,7 +39,6 @@ function Finances() {
       <Container className="root-page">
         <Row>
           <Col xl={3} className="d-none d-xl-block">
-            <UserInfo />
             <NavBar />
           </Col>
           <Col>

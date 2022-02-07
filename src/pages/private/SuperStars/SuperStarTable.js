@@ -129,7 +129,7 @@ function SuperStarTable({ location: { state = {}, pathname } }) {
   }
 
   const redirectToUserMatrix = (matrixId) => {
-    history.push(`/super-star-table/${matrixId}`)
+    history.push(`/MATRIX3-table/${matrixId}`)
     setSearchUsers([])
   }
 
@@ -234,7 +234,7 @@ function SuperStarTable({ location: { state = {}, pathname } }) {
         <div className={styles.header}>{backRouteElement}</div>
         <div className={styles.container}>
           <div className={styles.sidebar}>
-            {matrixInfo && <h1 className={styles.title}>SuperStar LVL {matrixInfo.level}</h1>}
+            {matrixInfo && <h1 className={styles.title}>MATRIX3 LVL {matrixInfo.level}</h1>}
             {matrixInfo && matrixInfo.id && matrixInfo.isActive && matrixInfo.level <= 3 && (
               <div className="d-none d-xl-block">
                 <Button
@@ -249,7 +249,7 @@ function SuperStarTable({ location: { state = {}, pathname } }) {
             )}
             {matrixInfo && matrixInfo.canBuy && (
               <div className={styles.footer}>
-                <p className={styles.price}>Цена - {matrixInfo.price} ST</p>
+                <p className={styles.price}>Цена - {matrixInfo.price} RUB</p>
                 <Button
                   onClick={showBuyMatrixModal}
                   disabled={buyingStatus.type === 'pending'}
@@ -264,7 +264,7 @@ function SuperStarTable({ location: { state = {}, pathname } }) {
             )}
             {matrixInfo && !matrixInfo.canBuy && matrixInfo.level <= 3 && (
               <div className={styles.footer}>
-                <p className={styles.price}>Цена - {matrixInfo.price} ST</p>
+                <p className={styles.price}>Цена - {matrixInfo.price} RUB</p>
                 <Button
                   onClick={showCometsBuyModal}
                   disabled={buyingStatus.type === 'pending'}
@@ -321,7 +321,7 @@ function SuperStarTable({ location: { state = {}, pathname } }) {
 
             {matrixInfo && (
               <div className={styles.footer}>
-                <p className={styles.price}>Цена - {matrixInfo.price} ST</p>
+                <p className={styles.price}>Цена - {matrixInfo.price} RUB</p>
                 {matrixInfo.canBuy && (
                   <Button
                     onClick={showBuyMatrixModal}

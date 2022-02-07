@@ -27,6 +27,7 @@ import Education from './pages/private/Education'
 import Settings from './pages/private/Settings'
 import Myinvest from './pages/private/StarsUp/component/Myinvest'
 import Histori from './pages/private/StarsUp/component/Histori'
+import Casino from './pages/private/Casino/Casino'
 
 export const publicRouteConfig = [
   {
@@ -192,6 +193,12 @@ export const panelRouteConfig = [
     id: 'b611f7bb-58bf-4230-826d-ec4174e454af',
     path: r.exchange,
     component: Exchange,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e454gf',
+    path: r.casino,
+    component: Casino,
     exact: true,
   },
 ]

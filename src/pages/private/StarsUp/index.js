@@ -3,7 +3,7 @@ import { Row, Col, Container, Button } from 'reactstrap'
 
 import NavBar from '../../../components/layout/Navbar'
 
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 import routes from '../../../constants/routes.constants'
 import { Link } from 'react-router-dom'
 
@@ -12,7 +12,6 @@ const StarsUp = () => {
     <Container className="root-page">
       <Row>
         <Col xl={3} className="d-none d-xl-block">
-          <UserInfo />
           <NavBar />
         </Col>
         <Col xl={9}>
