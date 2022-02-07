@@ -9,7 +9,7 @@ import r from '../../../constants/routes.constants'
 import * as actions from '../../../actions/startrek.actions'
 //import previewText from '../../../scss/media/startrek-logo.f688a0a8.svg'
 import NavBar from '../../../components/layout/Navbar'
-import UserInfo from '../../../components/UserInfo'
+//import UserInfo from '../../../components/UserInfo'
 import Button from '../../../components/Button'
 
 import Statistics from './Statistics'
@@ -54,7 +54,6 @@ function StarTrek() {
     <Container className="root-page">
       <Row>
         <Col xl={3} className="d-none d-xl-block">
-          <UserInfo />
           <NavBar />
         </Col>
         <Col xl={9}>
