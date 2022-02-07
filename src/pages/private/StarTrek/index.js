@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 import r from '../../../constants/routes.constants'
 import * as actions from '../../../actions/startrek.actions'
-import previewText from '../../../scss/media/startrek-logo.f688a0a8.svg'
+//import previewText from '../../../scss/media/startrek-logo.f688a0a8.svg'
 import NavBar from '../../../components/layout/Navbar'
 import UserInfo from '../../../components/UserInfo'
 import Button from '../../../components/Button'
@@ -58,9 +58,7 @@ function StarTrek() {
           <NavBar />
         </Col>
         <Col xl={9}>
-          <div className="startrek__title">
-            <img src={previewText} alt="До запуска Star Trek" />
-          </div>
+          <div className="startrek__title"></div>
           <Spinner isLoading={isLoading}>
             <Statistics />
             <div className="text-center">
