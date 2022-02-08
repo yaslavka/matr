@@ -28,6 +28,7 @@ import Settings from './pages/private/Settings'
 import Myinvest from './pages/private/StarsUp/component/Myinvest'
 import Histori from './pages/private/StarsUp/component/Histori'
 import Casino from './pages/private/Casino/Casino'
+import JuegoRuleta from './pages/private/Casino/components/JuegoRuleta'
 
 export const publicRouteConfig = [
   {
@@ -199,6 +200,12 @@ export const panelRouteConfig = [
     id: 'b611f7bb-58bf-4230-826d-ec4174e454gf',
     path: r.casino,
     component: Casino,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e45',
+    path: r.rollet,
+    component: JuegoRuleta,
     exact: true,
   },
 ]

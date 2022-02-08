@@ -2,6 +2,9 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../components/layout/Navbar'
 import CountdownTimer from '../StarTrek/CountdownTimer/CountdownTimer'
+import { Link } from 'react-router-dom'
+import routes from '../../../constants/routes.constants'
+import bgImage from './components/cuchillo.jpeg'
 
 function Casino() {
   return (
@@ -17,6 +20,11 @@ function Casino() {
           <div className="startrek__title">
             <CountdownTimer countdownTimestampMs={1659983662000} />
           </div>
+          <Link to={routes.rollet}>
+            {' '}
+            <img src={bgImage} alt="" width="15%" />
+            Спинер
+          </Link>
         </Col>
       </Row>
     </Container>
