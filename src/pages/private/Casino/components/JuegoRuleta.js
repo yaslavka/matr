@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import './JuegoRuleta.css'
 import { Wheel } from 'react-custom-roulette'
-import bgImage from './cuchillo.jpeg'
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../components/layout/Navbar'
 import closeIcon from '../../../../scss/media/close.ac2aaa1a.svg'
 import { Link } from 'react-router-dom'
 import routes from '../../../../constants/routes.constants'
 import styles from '../../Star/Table/Table.module.scss'
+import { formatter } from '../../../../utils'
+import { useDispatch, useSelector } from 'react-redux'
+import * as actions from '../../../../actions/finance.actions'
 
 const data = [
   { option: 'COMODÍN', style: { textColor: 'white' } },
@@ -39,9 +41,9 @@ function JuegoRuleta() {
   const acabaRuleta = () => {
     console.log('ruleta acabada')
     if (random === elegido) {
-      setDinero(dinero + 5)
-      console.log('has ganado 5€!')
-      setResultado('has ganado 5€!')
+      setDinero(dinero + 2)
+      console.log('has ganado €!')
+      setResultado('has ganado €!')
     } else if (random === 0) {
       setDinero(dinero + 1)
       console.log('comodín')
@@ -58,6 +60,23 @@ function JuegoRuleta() {
 
   console.log(activarRuleta)
   console.log(random)
+  const dispatch = useDispatch()
+  const [isOperationsHistoryModalVisible, setIsOperationsHistoryModalVisible] = useState(false)
+  const userInfo = useSelector((state) => state.app.user)
+
+  const handleVisibleTransferMoneyModal = useCallback(() => {
+    dispatch(actions.toggleTransferMoneyModal(true))
+  }, [dispatch])
+
+  const openOperationsHistoryModal = () => {
+    document.body.style.overflow = 'hidden'
+    setIsOperationsHistoryModalVisible(true)
+  }
+
+  const closeOperationsHistoryModal = () => {
+    document.body.style.overflow = 'initial'
+    setIsOperationsHistoryModalVisible(false)
+  }
 
   return (
     <Container className="root-page">
@@ -66,37 +85,44 @@ function JuegoRuleta() {
           <NavBar />
         </Col>
         <Col xl={9}>
-          <div>
-            <Link to={routes.casino} className={styles.close}>
-              <img src={closeIcon} alt="Close" />
-            </Link>
-            <div className={claseFondo}>
-              <h1>{dinero}€</h1>
+          {userInfo && (
+            <div>
+              <Link to={routes.casino} className={styles.close}>
+                <img src={closeIcon} alt="Close" />
+              </Link>
+              <div className={claseFondo}>
+                <h1>
+                  {dinero}
+                  {formatter
+                    .format((userInfo.balance > -1 && userInfo.balance) || 0)
+                    .replace('₽', 'RUB')}
+                </h1>
 
-              <Wheel
-                mustStartSpinning={activarRuleta}
-                onStopSpinning={() => acabaRuleta()}
-                prizeNumber={random}
-                data={data}
-                backgroundColors={['#3e3e3e', '#df3428']}
-                textColors={['#ffffff']}
-              />
+                <Wheel
+                  mustStartSpinning={activarRuleta}
+                  onStopSpinning={() => acabaRuleta()}
+                  prizeNumber={random}
+                  data={data}
+                  backgroundColors={['#3e3e3e', '#df3428']}
+                  textColors={['#ffffff']}
+                />
 
-              <button
-                className={botonRuleta}
-                onClick={() => {
-                  girar()
-                }}
-              >
-                Tirar
-              </button>
+                <button
+                  className={botonRuleta}
+                  onClick={() => {
+                    girar()
+                  }}
+                >
+                  Tirar
+                </button>
 
-              <br></br>
-              <br></br>
+                <br></br>
+                <br></br>
 
-              <h1>{resultado}</h1>
+                <h1>{resultado}</h1>
+              </div>
             </div>
-          </div>
+          )}
         </Col>
       </Row>
     </Container>
