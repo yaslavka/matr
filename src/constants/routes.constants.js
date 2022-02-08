@@ -31,6 +31,7 @@ const r = Object.freeze({
   investbox: '/investbox/history',
   casino: '/casino',
   rollet: '/casino/rollet',
+  dice: '/casino/dice',
   starsUpPersonTable: '/starsup/person/:level',
   starsUpPersonTableQueue: '/starsup/person/:level/queue',
   starsUpPersonBonuses: '/starsup/bonuses',

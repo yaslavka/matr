@@ -25,6 +25,11 @@ function Casino() {
             <img src={bgImage} alt="" width="15%" />
             Спинер
           </Link>
+          <Link to={routes.dice}>
+            {' '}
+            <img src={bgImage} alt="" width="15%" />
+            DICE
+          </Link>
         </Col>
       </Row>
     </Container>
