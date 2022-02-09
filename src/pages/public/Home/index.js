@@ -15,9 +15,13 @@ function Home() {
   return (
     <div className="page">
       <Header />
-      <Banner />
-      <Authentication />
-      <Footer />
+      <div className="auth__wrapper">
+        <div className="auth__page">
+          <Banner />
+          <Authentication />
+          <Footer />
+        </div>
+      </div>
     </div>
   )
 }

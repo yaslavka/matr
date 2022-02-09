@@ -1,0 +1,59 @@
+.menu {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  background: #a0d255;
+  transition: top 1s cubic-bezier(.8,-.5,.2,1.4), opacity 1s;
+}
+
+.menu.hide {
+  top: -50%;
+  opacity: 1;
+}
+
+.menu-items {
+  margin: 1.5rem 0;
+}
+
+.menu-item {
+  margin: 1rem;
+}
+
+.menu-item-name {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.menu-item-option {
+  padding: 0.1rem 0.2rem;
+}
+
+.menu-item-option.current {
+  color: #3d3d48;
+  text-decoration: underline;
+}
+
+.menu-item input {
+  font-family: "Segoe UI";
+  font-size: 1rem;
+  font-style: italic;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid #98c598;
+  border-radius: 0.5rem;
+  width: 45%;
+}
+
+.menu-item input::placeholder {
+  color: red;
+  opacity: 1;
+}
+
+.menu-item input:focus {
+  border-color: blue;
+}

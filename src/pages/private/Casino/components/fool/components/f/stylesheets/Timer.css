@@ -1,0 +1,17 @@
+.timer {
+  transform: translate(445px, 475px);
+  fill: #de0c0c;
+}
+
+.timer text {
+  transform: translate(20px, 21px);
+  text-anchor: middle;
+  fill: black;
+  font-size: 1.2rem;
+}
+
+.timer rect {
+  height: 30px;
+  width: 40px;
+  rx: 10px;
+}

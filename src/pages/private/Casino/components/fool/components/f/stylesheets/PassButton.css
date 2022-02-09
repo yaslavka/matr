@@ -1,0 +1,21 @@
+.pass-button {
+  transform: translate(500px, 475px);
+  transition: opacity 0.3s;
+  fill: #249624;
+}
+
+.pass-button text {
+  transform: translate(33px, 20px);
+  text-anchor: middle;
+  fill: black;
+}
+
+.pass-button rect {
+  height: 30px;
+  width: 66px;
+  rx: 10px;
+}
+
+.pass-button:hover {
+  fill: #bd3232;
+}

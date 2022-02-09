@@ -105,11 +105,10 @@ function Hear(props) {
                     fixedDecimalScale={true}
                   />
                 ) : (
-                  0
+                  formatter
+                    .format((userInfo.balance > -1 && userInfo.balance) || 0)
+                    .replace('₽', 'RUB')
                 )}
-                {formatter
-                  .format((userInfo.balance > -1 && userInfo.balance) || 0)
-                  .replace('₽', 'RUB')}
               </Typography>
               {datos.state && datos.state.isLogged ? (
                 <>

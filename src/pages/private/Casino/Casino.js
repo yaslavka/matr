@@ -30,6 +30,16 @@ function Casino() {
             <img src={bgImage} alt="" width="15%" />
             DICE
           </Link>
+          <Link to={routes.fool}>
+            {' '}
+            <img src={bgImage} alt="" width="15%" />
+            Fool
+          </Link>
+          <Link to={routes.slots}>
+            {' '}
+            <img src={bgImage} alt="" width="15%" />
+            Slots
+          </Link>
         </Col>
       </Row>
     </Container>

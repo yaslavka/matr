@@ -1,15 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import './JuegoRuleta.css'
 import { Wheel } from 'react-custom-roulette'
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../components/layout/Navbar'
-import closeIcon from '../../../../scss/media/close.ac2aaa1a.svg'
-import { Link } from 'react-router-dom'
-import routes from '../../../../constants/routes.constants'
-import styles from '../../Star/Table/Table.module.scss'
 import { formatter } from '../../../../utils'
 import { useDispatch, useSelector } from 'react-redux'
 import * as actions from '../../../../actions/finance.actions'
+import Spin from './Header'
 
 const data = [
   { option: 'COMODÍN', style: { textColor: 'white' } },
@@ -87,9 +84,7 @@ function JuegoRuleta() {
         <Col xl={9}>
           {userInfo && (
             <div>
-              <Link to={routes.casino} className={styles.close}>
-                <img src={closeIcon} alt="Close" />
-              </Link>
+              <Spin />
               <div className={claseFondo}>
                 <h1>
                   {dinero}

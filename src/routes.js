@@ -30,6 +30,8 @@ import Histori from './pages/private/StarsUp/component/Histori'
 import Casino from './pages/private/Casino/Casino'
 import JuegoRuleta from './pages/private/Casino/components/JuegoRuleta'
 import DICE from './pages/private/Casino/components/dice/App'
+import Fool from './pages/private/Casino/components/fool/Casino'
+import Canvas from './pages/private/Casino/components/Slots/components/Canvas'
 
 export const publicRouteConfig = [
   {
@@ -213,6 +215,18 @@ export const panelRouteConfig = [
     id: 'b611f7bb-58bf-4230-826d-ec4174e454589361',
     path: r.dice,
     component: DICE,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e454561',
+    path: r.fool,
+    component: Fool,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e45456147',
+    path: r.slots,
+    component: Canvas,
     exact: true,
   },
 ]

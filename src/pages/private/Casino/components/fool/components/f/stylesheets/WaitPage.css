@@ -1,0 +1,65 @@
+.wait-page {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  background: #5a55f1;
+  transition: top 1s cubic-bezier(.8,-.5,.2,1.4), opacity 1s;
+}
+
+.wait-page.hide {
+  top: -50%;
+  opacity: 1;
+}
+
+.wait-page .info {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wait-page img {
+  width: 2rem;
+  height: 2rem;
+  animation-name: waiting;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes waiting {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.wait-page .user-block {
+  width: 4rem;
+  height: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: aqua;
+  border-radius: 0.2rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.wait-page .user-block.confirm {
+  background-color: red;
+}
+
+.wait-page button {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.wait-page .cancel-button {
+  color: red;
+}

@@ -1,0 +1,25 @@
+.appp {
+  height: 100vh;
+  width: 90%;
+}
+.fields{
+width: auto;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #209a9a;
+  background: #ffbd1a;
+  color: #52182b;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0.2rem 0.2rem 0.3rem;
+  background: #46b52e;
+}
