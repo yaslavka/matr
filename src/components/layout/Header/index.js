@@ -98,6 +98,12 @@ const privateNavLinks = [
     icon: starsUp,
   },
   {
+    label: 'Игры',
+    route: routes.casino,
+    isDisabled: false,
+    icon: car,
+  },
+  {
     label: 'О нас',
     route: routes.aboutUs,
     isDisabled: false,

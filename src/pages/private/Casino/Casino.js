@@ -5,6 +5,9 @@ import CountdownTimer from '../StarTrek/CountdownTimer/CountdownTimer'
 import { Link } from 'react-router-dom'
 import routes from '../../../constants/routes.constants'
 import bgImage from './components/cuchillo.jpeg'
+import bgImag from './components/obesyn/mm.png'
+import bgIma from './img/mmm.png'
+import bgIm from './img/11.png'
 
 function Casino() {
   return (
@@ -39,6 +42,26 @@ function Casino() {
             {' '}
             <img src={bgImage} alt="" width="15%" />
             Slots
+          </Link>
+          <Link to={routes.barr}>
+            {' '}
+            <img src={bgImage} alt="" width="15%" />
+            BAR
+          </Link>
+          <Link to={routes.cost}>
+            {' '}
+            <img src={bgIm} alt="" width="15%" />
+            COST
+          </Link>
+          <Link to={routes.costs}>
+            {' '}
+            <img src={bgIma} alt="" width="15%" />
+            COSTS
+          </Link>
+          <Link to={routes.obes}>
+            {' '}
+            <img src={bgImag} alt="" width="15%" />
+            MONKEY
           </Link>
         </Col>
       </Row>

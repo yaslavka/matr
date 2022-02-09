@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ezslots > .window {
+  overflow: hidden;
+  display: inline-block;
+  height: 380px !important;
+  font-size: 40px;
+  font-family: arial, helvetica, sans-serif;
+  border: 1px solid rgb(51, 40, 40);
+  background: url("./images/board-middle.png") no-repeat;
+}
+.ezslots > .window > .slider > .symbol {
+  text-align: center;
+}
+.ezslots > .window > .slider > .symbol > .contents {
+  padding: 0px;
+  margin: 0px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.spin-slot {
+  border: 0;
+  float: right;
+  outline: none;
+  padding: 28px 60px;
+  background: url("./images/spin-button.png") -2px -4px no-repeat;
+}
+.spin-slot-disabled {
+  background-position: -2px -304px !important;
+}
+.spin-slot:hover {
+  outline: none;
+  background-position: -2px -104px;
+}
+#bet-one {
+  border: 0px;
+  width: 80px;
+  height: 80px;
+  margin-right: 3px;
+  outline: none;
+  padding: 28px 38px;
+  background: url("./images/bet-one.png") center bottom no-repeat;
+}
+#bet-max {
+  border: 0px;
+  width: 80px;
+  height: 80px;
+  outline: none;
+  padding: 28px 38px;
+  background: url("./images/bet-max.png") center bottom no-repeat;
+}
+#bet-one:hover,
+#bet-max:hover {
+  background-position: center 0px;
+}
+.credit-display {
+  width: 318px;
+  height: 92px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 16px 12px 14px 54px;
+  background: url("./images/display.png") left 0px no-repeat;
+  font-size: 40px;
+  color: #fffb00;
+  font-weight: bold;
+}
+.bet-display {
+  width: 196px;
+  height: 92px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 16px 12px 14px 54px;
+  background: url("./images/display.png") left -94px no-repeat;
+  font-size: 40px;
+  color: #fffb00;
+  font-weight: bold;
+}
+.winning-display {
+  width: 206px;
+  height: 92px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 16px 12px 14px 65px;
+  background: url("./images/display.png") -200px -94px no-repeat;
+  font-size: 40px;
+  color: #fffb00;
+  font-weight: bold;
+}
+
+#spinner-board {
+  display: inline-block;
+  margin: 0 auto;
+  height: 380px;
+}
+.winner-badge {
+  width: 444px;
+  height: 74px;
+  margin: 0 auto;
+  background: url("./images/winner.png") center bottom no-repeat;
+  font-size: 40px;
+  color: #fffb00;
+  font-weight: bold;
+}
+.winner-badge-active {
+  background-position: center 3px;
+}
+.loser-badge-active {
+  background-position: center -75px;
+}
+
+/* Fit the canvas to the page width. */
+#canvas {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  touch-action: none;
+  width: calc(100% - 2px); /* for borders */
+  height: calc(100% - 2px); /* for borders */
+  top: 0;
+  left: 0;
+  z-index: -9;
+}
+.colophon {
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+}

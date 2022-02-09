@@ -32,6 +32,10 @@ import JuegoRuleta from './pages/private/Casino/components/JuegoRuleta'
 import DICE from './pages/private/Casino/components/dice/App'
 import Fool from './pages/private/Casino/components/fool/Casino'
 import Canvas from './pages/private/Casino/components/Slots/components/Canvas'
+import Bar from './pages/private/Casino/components/Slots/BAR/App'
+import Cost from './pages/private/Casino/components/cost/Components/Cost'
+import Costs from './pages/private/Casino/components/Costs/Costs'
+import Monk from './pages/private/Casino/components/obesyn'
 
 export const publicRouteConfig = [
   {
@@ -227,6 +231,30 @@ export const panelRouteConfig = [
     id: 'b611f7bb-58bf-4230-826d-ec4174e45456147',
     path: r.slots,
     component: Canvas,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e454561479',
+    path: r.barr,
+    component: Bar,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e454561474',
+    path: r.cost,
+    component: Cost,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e4545614740',
+    path: r.costs,
+    component: Costs,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e45458414740',
+    path: r.obes,
+    component: Monk,
     exact: true,
   },
 ]

@@ -14,9 +14,9 @@ const Exchange = () => {
   return (
     <Container className="root-page">
       <Row>
-        <m className="d-none d-xl-block col-xl-38">
+        <Col className="d-none d-xl-block col-xl-38">
           <NavBar />
-        </m>
+        </Col>
         <Col xl={9}>
           <Nav />
           <Chart />
