@@ -64,6 +64,7 @@
     "pixi-assetslist-loader": "^1.0.0",
     "pixi-particles": "^4.2.0",
     "pixi.js": "^5.2.1",
+    "pokersolver": "^2.1.4",
     "postcss": "^8.4.5",
     "prop-types": "^15.7.2",
     "random": "^3.0.6",
