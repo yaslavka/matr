@@ -9,6 +9,8 @@ import bgImag from './components/obesyn/mm.png'
 import bgIma from './img/mmm.png'
 import bgIm from './img/11.png'
 import bg from './components/Boom/images/bomb.svg'
+import blac from './components/blac/assets/poker-chip.png'
+import blaac from './components/vvvvv/assets/img/hexa.png'
 
 function Casino() {
   return (
@@ -24,6 +26,7 @@ function Casino() {
           <div className="startrek__title">
             <CountdownTimer countdownTimestampMs={1659983662000} />
           </div>
+          <h1 className="startrek__title1">ИГРЫ</h1>
           <Link to={routes.rollet}>
             {' '}
             <img src={bgImage} alt="" width="15%" />
@@ -68,6 +71,19 @@ function Casino() {
             {' '}
             <img src={bg} alt="" width="15%" />
             BOOM
+          </Link>
+          <Link to={routes.blac}>
+            {' '}
+            <img src={blac} alt="" width="15%" />
+            BLAK
+          </Link>
+          <Link to={routes.blaac}>
+            {' '}
+            <img src={blaac} alt="" width="15%" />
+          </Link>
+          <Link to={routes.blaacb}>
+            {' '}
+            <img src={blaac} alt="" width="15%" />
           </Link>
         </Col>
       </Row>

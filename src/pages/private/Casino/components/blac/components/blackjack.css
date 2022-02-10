@@ -1,0 +1,76 @@
+#card-display-wrapper {
+    display:    flex;
+    flex-flow:  row wrap;
+    justify-content: space-evenly;
+}
+
+.card-display {
+    display:    flex;
+    flex-flow: column nowrap;
+    justify-content:    space-between;
+
+    min-width:  10.1rem;
+
+    color:  #000;
+
+    background-color:   #9f9;
+    box-shadow: inset 4px 4px 0px rgba(0,0,0,0.4);
+
+    border-radius:  0.5rem;
+
+    padding:        1rem;
+    margin-bottom:  1rem;
+}
+
+.card-display h3 {
+    margin-bottom:  1rem;
+}
+
+.card-wrapper {
+    position:   relative;
+    margin-bottom:  5px;
+
+    font-size:      1.5rem;
+}
+
+.card-wrapper div {
+    line-height:    1;
+    margin-bottom:  0.33rem;
+}
+
+.bust-indicator, .blackjack-indicator, .score-display {
+    font-weight:    bold;
+    font-size:      2rem;
+
+    line-height:    1;
+
+    color:      rgba(0,32,0, 0.7);
+}
+
+.blackjack-indicator, .score-display-winner {
+    text-shadow:    1px 1px 4px #0f0;
+}
+
+.bust-indicator, .score-display-loser {
+    text-shadow:    1px 1px 4px #f00;
+}
+
+.score-display-tie {
+    text-shadow:    1px 1px 4px #777;
+}
+
+.bust-indicator {
+    position:   absolute;
+    top:    50%;
+    left:   50%;
+
+    transform:  translate(-50%, -50%) rotate(30deg);
+}
+
+.score-display {
+    margin-top: 10px;
+}
+
+.bet-form {
+    margin-bottom: 20px;   
+}

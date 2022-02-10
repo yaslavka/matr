@@ -355,7 +355,7 @@ export default function Table({ location: { state = {}, pathname } }) {
     <div className={styles.Table}>
       <Container>
         <div className={styles.header}>
-          {matrixInfo && <h1 className={styles.title}>STARS - {matrixInfo.name}</h1>}
+          {matrixInfo && <h1 className={styles.title}>MATRIX - {matrixInfo.name}</h1>}
           {backRouteElement}
         </div>
         {matrixInfo && matrixInfo.isActive && (

@@ -1,0 +1,275 @@
+/*
+ * Textur stammt von Toptal Subtle Patterns
+ * Mithilfe von https://transparenttextures.com/
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Lucida Grande", "Geneva", "Calibri", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size:  20px;
+  color:  #fff;
+
+  background-color: #007700;
+  background-image: url("./assets/black-felt.png");
+  background-repeat: repeat;
+}
+
+.column {
+  max-width:  1000px;
+  margin: auto;
+  padding: 0.75rem;
+}
+
+maing {
+  font-size:  1.1rem;
+}
+
+h1 {
+  display:  inline-block;
+  z-index:  9999;
+
+  margin: 0;
+  line-height:  1;
+
+  font-size:  4rem;
+  color: #ccac00;
+
+  text-shadow:
+  1px 1px rgba(150, 100, 0, 1),
+  2px 1px rgba(150, 100, 0, 1),
+  3px 2px rgba(150, 100, 0, 1),
+  4px 2px rgba(150, 100, 0, 1),
+  5px 3px rgba(150, 100, 0, 1),
+  6px 3px rgba(150, 100, 0, 1),
+  7px 4px rgba(150, 100, 0, 1),
+  8px 4px rgba(150, 100, 0, 1);
+
+  padding-right: 3.5rem;
+}
+
+h1::after {
+  display:  block;
+  position: absolute;
+
+  z-index: -1;
+  content:  "";
+
+  height: 2.4rem;
+  width:  2.4rem;
+
+  left: 10.4rem;
+  top:  1.2rem;
+
+  background-size:  100% 100%;
+  background-repeat:  no-repeat;
+
+}
+
+h1, h2, #status-display {
+  font-family: 'Calisto MT', 'Cambria', 'Book Antiqua', serif;
+
+  letter-spacing: 1px;
+
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size:  2.5rem;
+  line-height:  1;
+
+  margin: 1rem;
+}
+
+h3, h4 {
+  margin-top: 0;
+  margin-bottom:  1rem;
+  line-height:  1;
+
+  font-variant: petite-caps;
+}
+
+headerx {
+  background-color: #000000;
+  background-image: url("./assets/fabric-of-squares.png");
+  text-align: left;
+}
+
+#header-barx {
+  position: relative;
+
+  display:  flex;
+  flex-flow:  row wrap;
+  justify-content: space-between;
+  align-items:  baseline;
+
+  margin-bottom: 0.5rem;
+}
+
+navx {
+  display:  inline-block;
+  height:   100%;
+
+  padding-left: 3px;
+}
+
+.nav-linkx {
+  display:  inline-block;
+  height:   100%;
+  line-height:  1;
+
+  font-size: 1.1rem;
+  font-weight:  bold;
+  color:    #ddd;
+
+  background-color: #000;
+
+  border:   outset 4px #ddd;
+  border-radius:  10px;
+
+  padding:  7px 10px;
+  margin:   3px 6px 3px 0px;
+
+  cursor:   pointer;
+  text-decoration:  none;
+}
+
+.nav-link-activex {
+  background-color: #000;
+  color:            #ccac00;
+  border-color:     #ccac00;
+}
+
+#status-display {
+  display:  inline-block;
+  font-size:  1.5rem;
+}
+
+maing {
+  padding:  0;
+}
+
+#controls {
+  margin-bottom:  1rem;
+}
+
+inputx, buttonx, .bet-indicator, .bet-excessive-indicator, .loss-indicator, .win-indicator, .tie-indicator {
+  font-size:  1.1rem;
+  border-radius:  10px;
+  padding:  0.25rem 0.5rem;
+
+  font-weight:  bold;
+}
+
+inputx, buttonx {
+  margin: 0rem 0.25rem;
+}
+
+input[type="number"] {
+  margin: 10px 5px 0 5px;
+}
+
+label {
+  display:  inline-block;
+  margin-bottom:  0.75rem;
+}
+
+button {
+  user-select: none;
+
+  background-color: #393;
+  border-color:     #393;
+
+  color:        #fff;
+}
+
+button:disabled {
+  color:  #050;
+  background-color: #585;
+  border-color:     #585;
+}
+
+input[type="number"] {
+  text-align: right;
+}
+
+.bet-indicator, .bet-excessive-indicator, .loss-indicator, .win-indicator, .tie-indicator {
+  display:  inline-block;
+  line-height:  1;
+
+  color:  #fff;
+  font-weight: bold;
+
+  border-style: dashed;
+  border-width: 4px;
+  border-color: #fff;
+
+  padding: 5px 10px;
+}
+
+.bet-indicator {
+  background-color: #000;
+  margin-bottom: 1rem;
+}
+
+.loss-indicator {
+  background-color: #b00;
+}
+
+.win-indicator {
+  background-color: #090;
+}
+
+.tie-indicator {
+  background-color: #666;
+}
+
+.bet-excessive-indicator {
+  background-color: #b00;
+  margin-top: 0.75rem;
+}
+
+.green-text {
+  font-weight: bold;
+  color:  #090;
+}
+
+.red-text {
+  font-weight:  bold;
+  color:  #b00;
+}
+
+.gray-text {
+  color:  #666;
+}
+
+.gold-text {
+  color: #ccac00;
+}
+
+.glamour-text {
+  font-weight:  bold;
+  color: #ccac00;
+
+  text-shadow:
+  1px 1px rgba(150, 100, 0, 1),
+  2px 1px rgba(150, 100, 0, 1),
+  3px 2px rgba(150, 100, 0, 1),
+  4px 2px rgba(150, 100, 0, 1);
+}
+
+.glamour-text.red-text {
+  color:  #b00;
+
+  text-shadow:
+  1px 1px rgba(70, 10, 10, 1),
+  2px 1px rgba(70, 10, 10, 1),
+  3px 2px rgba(70, 10, 10, 1),
+  4px 2px rgba(70, 10, 10, 1);
+}

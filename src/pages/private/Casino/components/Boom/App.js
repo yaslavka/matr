@@ -65,12 +65,10 @@ const Boo = ({
   const final_points = multiplier * POINT_REWARD
 
   let score
-  //const [MinesSelectedNumber, setMinesSelectedNumber] = useState([])
-  // const [win, setWin] = useState({
-  //   eight: false,
-  // });
-
-  let MinesSelectedNumber = []
+  let [MinesSelectedNumber, setMinesSelectedNumber] = useState([])
+  const [win, setWin] = useState({
+    eight: false,
+  })
 
   const verifier = (nb) => {
     return MinesSelectedNumber.some((number, index) => {

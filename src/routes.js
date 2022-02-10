@@ -37,6 +37,9 @@ import Cost from './pages/private/Casino/components/cost/Components/Cost'
 import Costs from './pages/private/Casino/components/Costs/Costs'
 import Monk from './pages/private/Casino/components/obesyn'
 import Booom from './pages/private/Casino/components/Boom'
+import Blac from './pages/private/Casino/components/blac'
+import Blacc from './pages/private/Casino/components/vvvvv'
+import Blaccd from './pages/private/Casino/components/cccc'
 
 export const publicRouteConfig = [
   {
@@ -262,6 +265,24 @@ export const panelRouteConfig = [
     id: 'b611f7bb-58bf-4230-826d-ec4174e454584147477',
     path: r.boom,
     component: Booom,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-82d-ec4174e454584147477',
+    path: r.blac,
+    component: Blac,
+    exact: true,
+  },
+  {
+    id: 'b611f7b-58bf-4230-82d-ec4174e454584147477',
+    path: r.blaac,
+    component: Blacc,
+    exact: true,
+  },
+  {
+    id: 'b611f7b-58bf-4230-82d-ec4174e4545847477',
+    path: r.blaacb,
+    component: Blaccd,
     exact: true,
   },
 ]
