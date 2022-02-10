@@ -15,14 +15,14 @@
   background-color: #213743;
   margin-bottom: 3px;
 }
-.wrappers {
+.wrapper {
   position:relative;
   display:flex;
   max-height:650px;
   max-width:740px;;
 }
 
-.wrappers .settings{
+.wrapper .settings{
   display: flex;
   flex-direction: column;
   -webkit-box-align: stretch;
@@ -31,7 +31,7 @@
   min-width: 200px ;
 }
 
-.settings .btnn {
+.settings .btn {
   position:relative;
   display: inline-flex;
   justify-content: center;
@@ -45,11 +45,11 @@
   border: 1px solid transparent;
   border-radius: 15px
 }
-.btn-containe{
+.btn-container{
   text-align: center;
   padding-top: 100px;
 }
-.containe {
+.containerd {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
@@ -58,12 +58,12 @@
 
 
 }
-.containe button {
+.containerd button {
   background-color: #2F4553;
   aspect-ratio: 1;
 }
 
-.containe .box{
+.containerd .box{
   border: 1px solid black;
   border-radius: 7px;
   width: 100px;
@@ -75,7 +75,7 @@
   /*background-image: url('https://stake.com//d401a08beb46ae17e3388b5083fca98a.svg');*/
 }
 
-.containe .box:hover{
+.containerd .box:hover{
   background-color: #557085;
   transform: scale(1.1);
   transform-origin: bottom;

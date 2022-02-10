@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import random from 'random'
-import Mines from './component/Mines'
-import Bombe from './component/Bombe'
-import PropTypes from 'prop-types'
-const Boom = ({
+//import Mines from './component/Mines'
+//import Bombe from './component/Bombe'
+const Boo = ({
   // eslint-disable-next-line react/prop-types
   oneCliked,
   // eslint-disable-next-line react/prop-types
@@ -57,7 +56,7 @@ const Boom = ({
   const [playing, setPlaying] = useState(false)
   const [cashout, setCashout] = useState(false)
   const [lost, setLost] = useState(false)
-  const [multiplier, setMultipler] = useState(1)
+  const [multiplier, setMultipler] = useState(0)
   const [scoreNumber, setScoreNumber] = useState(0.0)
   const [disableButton, setDisableButton] = useState(false)
 
@@ -66,34 +65,12 @@ const Boom = ({
   const final_points = multiplier * POINT_REWARD
 
   let score
-  let [MinesSelectedNumber, setMinesSelectedNumber] = useState([])
-  const [win, setWin] = useState({
-    one: false,
-    two: false,
-    three: false,
-    four: false,
-    five: false,
-    six: false,
-    seven: false,
-    eight: false,
-    nine: false,
-    teen: false,
-    twelve: false,
-    eleven: false,
-    thirteen: false,
-    fourteen: false,
-    fifteen: false,
-    sixteen: false,
-    seventeen: false,
-    eighteen: false,
-    nineteen: false,
-    twenty: false,
-    twentyone: false,
-    twentytwo: false,
-    twentythree: false,
-    twentyfour: false,
-    thwentyfive: false,
-  })
+  //const [MinesSelectedNumber, setMinesSelectedNumber] = useState([])
+  // const [win, setWin] = useState({
+  //   eight: false,
+  // });
+
+  let MinesSelectedNumber = []
 
   const verifier = (nb) => {
     return MinesSelectedNumber.some((number, index) => {
@@ -113,7 +90,7 @@ const Boom = ({
     let min = 1
     let max = 25
     if (numberOfMines === 1) {
-      const rnbb = random.int(min, max)
+      var rnbb = random.int(min, max)
       MinesSelectedNumber.push(rnbb)
       return
     }
@@ -605,26 +582,16 @@ const Boom = ({
       <div className="score">
         <h4>SCORE:</h4> <h1>{scoreBoard}</h1>
       </div>
-      <div className="wrappers">
+      <div className="wrapper">
         <div className="settings">
-          <div className="btn-containe">
+          <div className="btn-container">
             <div className="mineNumberSetting">
               <label className="mineNumberText">
                 <span>Mines</span>
               </label>
               <select name="minesNumber" id="mineNumber" onChange={(e) => mineNumberHandler(e)}>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
                 <option value="8">8</option>
                 <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
               </select>
             </div>
             <button className="btn" onClick={() => StartCashout()}>
@@ -632,7 +599,7 @@ const Boom = ({
             </button>
           </div>
         </div>
-        <div className="containe">
+        <div className="containerd">
           <button
             className="box box1"
             onClick={(e) => pickHandler(e)}
@@ -796,34 +763,8 @@ const Boom = ({
     </>
   )
 }
-Boom.propTypes = {
-  oneCliked: PropTypes.string,
-  twoCliked: PropTypes.string,
-  threeCliked: PropTypes.string,
-  fourCliked: PropTypes.string,
-  fiveCliked: PropTypes.string,
-  sixCliked: PropTypes.string,
-  sevenCliked: PropTypes.string,
-  eightCliked: PropTypes.string,
-  nineCliked: PropTypes.string,
-  tenCliked: PropTypes.string,
-  elevenCliked: PropTypes.string,
-  twelveCliked: PropTypes.string,
-  thirteenCliked: PropTypes.string,
-  fourteenCliked: PropTypes.string,
-  fifteenCliked: PropTypes.string,
-  sixteenCliked: PropTypes.string,
-  seventeenCliked: PropTypes.string,
-  eighteenCliked: PropTypes.string,
-  nineteenCliked: PropTypes.string,
-  twentyCliked: PropTypes.string,
-  twentyOneCliked: PropTypes.string,
-  twentyTwoCliked: PropTypes.string,
-  twentyThreeCliked: PropTypes.string,
-  twetyFourCliked: PropTypes.string,
-  twentyFiveCliked: PropTypes.string,
-}
-Boom.defaultProps = {
+
+Boo.defaultProps = {
   oneCliked: false,
   twoCliked: false,
   threeCliked: false,
@@ -850,4 +791,4 @@ Boom.defaultProps = {
   twetyFourCliked: false,
   twentyFiveCliked: false,
 }
-export default Boom
+export default Boo

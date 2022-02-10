@@ -1,9 +1,9 @@
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../../components/layout/Navbar'
 import React from 'react'
-import Boom from './App'
 import Spio from '../../../../../components/Header'
 import './index.css'
+import Boo from './App'
 
 function Booom() {
   return (
@@ -14,7 +14,7 @@ function Booom() {
         </Col>
         <Col xl={8}>
           <Spio />
-          <Boom />
+          <Boo />
         </Col>
       </Row>
     </Container>
