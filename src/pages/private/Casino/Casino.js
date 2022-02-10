@@ -8,6 +8,7 @@ import bgImage from './components/cuchillo.jpeg'
 import bgImag from './components/obesyn/mm.png'
 import bgIma from './img/mmm.png'
 import bgIm from './img/11.png'
+import bg from './components/Boom/images/bomb.svg'
 
 function Casino() {
   return (
@@ -62,6 +63,11 @@ function Casino() {
             {' '}
             <img src={bgImag} alt="" width="15%" />
             MONKEY
+          </Link>
+          <Link to={routes.boom}>
+            {' '}
+            <img src={bg} alt="" width="15%" />
+            BOOM
           </Link>
         </Col>
       </Row>

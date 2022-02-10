@@ -36,6 +36,7 @@ import Bar from './pages/private/Casino/components/Slots/BAR/App'
 import Cost from './pages/private/Casino/components/cost/Components/Cost'
 import Costs from './pages/private/Casino/components/Costs/Costs'
 import Monk from './pages/private/Casino/components/obesyn'
+import Booom from './pages/private/Casino/components/Boom'
 
 export const publicRouteConfig = [
   {
@@ -255,6 +256,12 @@ export const panelRouteConfig = [
     id: 'b611f7bb-58bf-4230-826d-ec4174e45458414740',
     path: r.obes,
     component: Monk,
+    exact: true,
+  },
+  {
+    id: 'b611f7bb-58bf-4230-826d-ec4174e454584147477',
+    path: r.boom,
+    component: Booom,
     exact: true,
   },
 ]

@@ -38,6 +38,7 @@ const r = Object.freeze({
   cost: '/casino/cost',
   costs: '/casino/costs',
   obes: '/casino/obes',
+  boom: '/casino/boom',
   starsUpPersonTable: '/starsup/person/:level',
   starsUpPersonTableQueue: '/starsup/person/:level/queue',
   starsUpPersonBonuses: '/starsup/bonuses',
