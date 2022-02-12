@@ -277,7 +277,7 @@ pre {
 }
 .left_bar {
   background: rgba(246, 247, 248, 0);
-  width:45%;
+  width:43%;
   float:left;
 }
 .center_box {
@@ -299,7 +299,7 @@ pre {
   float:left;
 }
 .col_3 {
-  width:45%;
+  width:43%;
   float:left;
 }
 
@@ -415,7 +415,7 @@ pre {
   width:auto;
 }
 .result {
-  margin-right:15px;
+  margin-right: -5px;
 }
 table.balances {
   font-size:13px;
@@ -490,17 +490,16 @@ table.balances2 tbody tr td span {
 }
 .market_box {
   padding:16px 0 0 0;
-  border-right:1px solid #e5e5e5;
 }
 .market_scroll {
   height:485px;
   width:auto;
 }
 table.marketes {
-  font-size:11px;
+  font-size:16px;
 }
 table.marketes thead {
-  color:#b2b2b2;
+  color: #07a93b;
 }
 table.marketes thead tr {}
 table.marketes thead tr th {
@@ -568,15 +567,6 @@ table.marketes tbody tr.active {
   background:#9aa8b9;
 }
 
-
-table.marketes tbody tr td {
-  padding:0 1px;
-  height:20px;
-  vertical-align:middle;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-}
 table.marketes tbody tr td.first {
   padding:0 2px 0 19px;
   position:relative;
@@ -1662,7 +1652,7 @@ table.trade_history_table tbody tr.red i { color:#ff9797; }
 }
 .chosen-container-multi .chosen-drop .result-selected {
   display: list-item;
-  color: #ccc;
+  color: #2ce12f;
   cursor: default;
 }
 .chosen-container-active.chosen-with-drop .chosen-single div {
@@ -1810,6 +1800,23 @@ table.trade_history_table tbody tr.red i { color:#ff9797; }
 }
 .scrolling .disable {
   display:none;
+}
+.su{
+  padding: 0 5px;
+  height: 20px;
+  vertical-align: middle;
+}
+table.marketes tbody tr td.first {
+  padding: 0 2px 0 19px;
+  position: relative;
+}
+
+table.marketes tbody tr td {
+  padding: 0 25px;
+  height: 20px;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .noSelect {
   user-select:none;

@@ -1,16 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Row, Col, Container, Button } from 'reactstrap'
-import { resizeFreeInformationImage, formatter, formatterNumber } from '../../../utils'
+import { resizeFreeInformationImage, formatter } from '../../../utils'
 import * as htmlToImage from 'html-to-image'
 import { toast } from 'react-toastify'
 import { saveAs } from 'file-saver'
 import Raven from 'raven-js'
 
 import avatar from '../../../scss/media/placeholder.7e85be59.svg'
-import inImage from '../../../scss/media/insta.svg'
-import vkImage from '../../../scss/media/vk.svg'
-import tgImage from '../../../scss/media/vk.svg'
 
 import * as actions from '../../../actions/app.actions'
 

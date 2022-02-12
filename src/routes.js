@@ -15,7 +15,7 @@ import SuperStarsTable from './pages/private/SuperStars/SuperStarTable'
 import PremiumStars from './pages/private/AutoStars'
 import PremiumStarsTable from './pages/private/AutoStars/Table'
 import Table from './pages/private/Star/Table'
-import Exchange from './pages/private/exchange'
+
 import StarTrek from './pages/private/StarTrek'
 import StarTrekPlanets from './pages/private/StarTrek/MyPlanets'
 import StarTrekStatistic from './pages/private/StarTrek/Statistic'
@@ -40,6 +40,11 @@ import Booom from './pages/private/Casino/components/Boom'
 import Blac from './pages/private/Casino/components/blac'
 import Blacc from './pages/private/Casino/components/vvvvv'
 import Blaccd from './pages/private/Casino/components/cccc'
+import Dashbtc from './pages/private/exchange/pages/DashBtc'
+import Exchange from './pages/private/exchange/pages/ETHBTC'
+import Usd from './pages/private/exchange/pages/USDBTC'
+import Zec from './pages/private/exchange/pages/ZECBTC'
+import Wawes from './pages/private/exchange/pages/WAWESBTC'
 
 export const publicRouteConfig = [
   {
@@ -283,6 +288,30 @@ export const panelRouteConfig = [
     id: 'b611f7b-58bf-4230-82d-ec4174e4545847477',
     path: r.blaacb,
     component: Blaccd,
+    exact: true,
+  },
+  {
+    id: 'b611f7b-5845bf-423440-82d-ec4174e4545847477',
+    path: r.dash,
+    component: Dashbtc,
+    exact: true,
+  },
+  {
+    id: 'b611x7b-5845bf-423440-82d-ec4174e4545847477',
+    path: r.usd,
+    component: Usd,
+    exact: true,
+  },
+  {
+    id: 'b611tdd-5845bf-423440-82d-ec4174e4545847477',
+    path: r.zec,
+    component: Zec,
+    exact: true,
+  },
+  {
+    id: 'b611tdd-5845bf-423440-82d-ec4174e4545847477',
+    path: r.wawes,
+    component: Wawes,
     exact: true,
   },
 ]

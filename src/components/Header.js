@@ -17,6 +17,7 @@ import { formatter } from '../utils'
 import styles from '../pages/private/Star/Table/Table.module.scss'
 import closeIcon from '../scss/media/close.ac2aaa1a.svg'
 import routes from '../constants/routes.constants'
+import { format } from 'prettier'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,7 +56,11 @@ function Spio(props) {
   }
 
   const handleLogoClick = () => {
-    datos.restoreData({ isLogged: false, username: '', balance: 100 })
+    datos.restoreData({
+      isLogged: false,
+      username: '',
+      formatter: format(userInfo.balance || 0).replace('₽', 'RUB'),
+    })
   }
   const dispatch = useDispatch()
   const [isOperationsHistoryModalVisible, setIsOperationsHistoryModalVisible] = useState(false)

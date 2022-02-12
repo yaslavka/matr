@@ -87,7 +87,6 @@ function JuegoRuleta() {
               <Spin />
               <div className={claseFondo}>
                 <h1>
-                  {dinero}
                   {formatter
                     .format((userInfo.balance > -1 && userInfo.balance) || 0)
                     .replace('₽', 'RUB')}
