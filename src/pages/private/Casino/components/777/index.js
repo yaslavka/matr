@@ -2,9 +2,9 @@ import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../../components/layout/Navbar'
 import React from 'react'
 import Spio from '../../../../../components/Header'
-import './index.css'
+import Appgh from './App'
 
-function Blac() {
+function Blacsd() {
   return (
     <Container className="root-page">
       <Row>
@@ -13,9 +13,10 @@ function Blac() {
         </Col>
         <Col xl={8}>
           <Spio />
+          <Appgh />
         </Col>
       </Row>
     </Container>
   )
 }
-export default Blac
+export default Blacsd

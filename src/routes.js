@@ -45,6 +45,11 @@ import Exchange from './pages/private/exchange/pages/ETHBTC'
 import Usd from './pages/private/exchange/pages/USDBTC'
 import Zec from './pages/private/exchange/pages/ZECBTC'
 import Wawes from './pages/private/exchange/pages/WAWESBTC'
+import Blacsd from './pages/private/Casino/components/777'
+import Blacs from './pages/private/Casino/components/DDD'
+import Sas from './pages/private/Casino/components/7777'
+import Sasn from './pages/private/Casino/components/zzz'
+import Roll from './pages/private/Casino/components/roulette'
 
 export const publicRouteConfig = [
   {
@@ -312,6 +317,36 @@ export const panelRouteConfig = [
     id: 'b611tdd-5845bf-423440-82d-ec4174e4545847477',
     path: r.wawes,
     component: Wawes,
+    exact: true,
+  },
+  {
+    id: '1tdd-5845bf-423440-82d-ec4174e4545847477',
+    path: r.blaa,
+    component: Blacsd,
+    exact: true,
+  },
+  {
+    id: '1tdd-5845bf-423440-82d-ec4174e4545847477',
+    path: r.lacs,
+    component: Blacs,
+    exact: true,
+  },
+  {
+    id: '1tdffrd-5845bf-423440-82d-ec4174e4545847477',
+    path: r.sas,
+    component: Sas,
+    exact: true,
+  },
+  {
+    id: '1tdddfrd-5845bf-423440-82d-ec4174e4545847477',
+    path: r.sasn,
+    component: Sasn,
+    exact: true,
+  },
+  {
+    id: '1tdfrd-5845bf-423440-82d-ec4174e4545847477',
+    path: r.roll,
+    component: Roll,
     exact: true,
   },
 ]

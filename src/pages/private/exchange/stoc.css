@@ -32,7 +32,7 @@ input[type="button"]:focus { outline: none; }
 }
 /* Eric Meyer's CSS Reset */
 span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -1463,7 +1463,6 @@ table.trade_history_table tbody tr.red i { color:#ff9797; }
   position: absolute;
   top: 0;
   right: 5px;
-  display: block;
   width: 12px;
   height: 100%;
 }

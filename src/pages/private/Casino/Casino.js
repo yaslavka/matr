@@ -27,64 +27,80 @@ function Casino() {
             <CountdownTimer countdownTimestampMs={1659983662000} />
           </div>
           <h1 className="startrek__title1">ИГРЫ</h1>
-          <Link to={routes.rollet}>
-            {' '}
-            <img src={bgImage} alt="" width="15%" />
-            Спинер
-          </Link>
-          <Link to={routes.dice}>
-            {' '}
-            <img src={bgImage} alt="" width="15%" />
-            DICE
-          </Link>
-          <Link to={routes.fool}>
-            {' '}
-            <img src={bgImage} alt="" width="15%" />
-            Fool
-          </Link>
-          <Link to={routes.slots}>
-            {' '}
-            <img src={bgImage} alt="" width="15%" />
-            Slots
-          </Link>
-          <Link to={routes.barr}>
-            {' '}
-            <img src={bgImage} alt="" width="15%" />
-            BAR
-          </Link>
-          <Link to={routes.cost}>
-            {' '}
-            <img src={bgIm} alt="" width="15%" />
-            COST
-          </Link>
-          <Link to={routes.costs}>
-            {' '}
-            <img src={bgIma} alt="" width="15%" />
-            COSTS
-          </Link>
-          <Link to={routes.obes}>
-            {' '}
-            <img src={bgImag} alt="" width="15%" />
-            MONKEY
-          </Link>
-          <Link to={routes.boom}>
-            {' '}
-            <img src={bg} alt="" width="15%" />
-            BOOM
-          </Link>
-          <Link to={routes.blac}>
-            {' '}
-            <img src={blac} alt="" width="15%" />
-            BLAK
-          </Link>
-          <Link to={routes.blaac}>
-            {' '}
-            <img src={blaac} alt="" width="15%" />
-          </Link>
-          <Link to={routes.blaacb}>
-            {' '}
-            <img src={blaac} alt="" width="15%" />
-          </Link>
+          <Container>
+            <Link to={routes.rollet}>
+              {' '}
+              <img src={bgImage} alt="" width="15%" />
+              Спинер
+            </Link>
+            <Link to={routes.dice}>
+              {' '}
+              <img src={bgImage} alt="" width="15%" />
+              DICE
+            </Link>
+            <Link to={routes.fool}>
+              {' '}
+              <img src={bgImage} alt="" width="15%" />
+              Fool
+            </Link>
+            <Link to={routes.slots}>
+              {' '}
+              <img src={bgImage} alt="" width="15%" />
+              Slots
+            </Link>
+            <Link to={routes.barr}>
+              {' '}
+              <img src={bgImage} alt="" width="15%" />
+              BAR
+            </Link>
+            <Link to={routes.cost}>
+              {' '}
+              <img src={bgIm} alt="" width="15%" />
+              COST
+            </Link>
+            <Link to={routes.costs}>
+              {' '}
+              <img src={bgIma} alt="" width="15%" />
+              COSTS
+            </Link>
+            <Link to={routes.obes}>
+              {' '}
+              <img src={bgImag} alt="" width="15%" />
+              MONKEY
+            </Link>
+            <Link to={routes.boom}>
+              {' '}
+              <img src={bg} alt="" width="15%" />
+              BOOM
+            </Link>
+            <Link to={routes.blac}>
+              {' '}
+              <img src={blac} alt="" width="15%" />
+              BLAK
+            </Link>
+            <Link to={routes.blaac}>
+              {' '}
+              <img src={blaac} alt="" width="15%" />
+            </Link>
+            <Link to={routes.blaacb}>
+              <img src={blaac} alt="" width="15%" />
+            </Link>
+            <Link to={routes.blaa}>
+              <img src={blaac} alt="" width="15%" />
+            </Link>
+            <Link to={routes.lacs}>
+              <img src={blaac} alt="" width="15%" />
+            </Link>
+            <Link to={routes.sas}>
+              <img src={blaac} alt="" width="15%" />
+            </Link>
+            <Link to={routes.sasn}>
+              <img src={blaac} alt="" width="15%" />
+            </Link>
+            <Link to={routes.roll}>
+              <img src={blaac} alt="" width="15%" />
+            </Link>
+          </Container>
         </Col>
       </Row>
     </Container>

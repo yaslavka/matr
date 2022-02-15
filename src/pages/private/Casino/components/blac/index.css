@@ -1,18 +1,5 @@
-/*
- * Textur stammt von Toptal Subtle Patterns
- * Mithilfe von https://transparenttextures.com/
- */
-
-* {
-  box-sizing: border-box;
-}
 
 html, body {
-  margin: 0;
-  font-family: "Lucida Grande", "Geneva", "Calibri", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   font-size:  20px;
   color:  #fff;
 
