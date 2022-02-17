@@ -1,10 +1,8 @@
 import React, { useEffect, useContext } from 'react'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import Content from './components/Content'
 import configureStore, { history } from '../../../../../config/store'
 import NavBar from '../../../../../components/layout/Navbar'
 import { Col, Container, Row } from 'reactstrap'
-import Hear from './components/Header'
+import Spin from '../Header'
 export const store = configureStore()
 function DICE() {
   const datos = useContext(store)
@@ -25,12 +23,8 @@ function DICE() {
           <NavBar />
         </Col>
         <Col xl={9}>
-          <>
-            <CssBaseline />
-
-            <Hear />
-            <Content />
-          </>
+          <Spin />
+          <iframe src="http://admiral/lobby/game/fairy_land/" width="100%" height="44%"></iframe>
         </Col>
       </Row>
     </Container>

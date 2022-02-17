@@ -9,17 +9,9 @@ function Roll() {
         <Col xl={3} className="d-none d-xl-block">
           <NavBar />
         </Col>
-        <Col xl={8}>
+        <Col xl={9}>
           <Spio />
-          <iframe
-            id="gameIframe"
-            data-game="iframe"
-            src="https://hhsee.24wulk-clb.com/game/fullstate/html5/evoplay/hottriplesevensspecial/?project=1049&amp;user_id=24761000&amp;demo=1&amp;wid=1&amp;s=1f3747b305305d440b4a3d80c5c3d26b"
-            allowFullScreen=""
-            allow="autoplay"
-            width="100%"
-            height="100%"
-          ></iframe>
+          <iframe src="http://admiral/lobby/game/cocktail/" width="100%" height="100%" />
         </Col>
       </Row>
     </Container>

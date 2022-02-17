@@ -1,8 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../../../components/layout/Navbar'
-import MainPage from './MainPage'
-import Spi from './Header'
+import Spin from '../../Header'
 
 function Cost() {
   return (
@@ -12,8 +11,8 @@ function Cost() {
           <NavBar />
         </Col>
         <Col>
-          <Spi />
-          <MainPage />
+          <Spin />
+          <iframe src="http://admiral/lobby/game/lucky_haunter/" width="100%" height="44%" />
         </Col>
       </Row>
     </Container>

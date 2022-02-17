@@ -1,10 +1,9 @@
 import React from 'react'
 import Constants from '../common/Constants'
-import GameControls from './Controls'
 import '../css/Canvas.css'
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../../../components/layout/Navbar'
-import Foo from '../../fool/components/Header'
+import Spin from '../../Header'
 
 class Canvas extends React.Component {
   constructor(props) {
@@ -91,36 +90,8 @@ class Canvas extends React.Component {
             <NavBar />
           </Col>
           <Col>
-            <Foo />
-            <div className="sg-canvas-wrapper">
-              <div className="sg-canvas">
-                <div className="sg-reel-wrapper">
-                  <canvas
-                    id="reel1"
-                    width={Constants.reels.canvasWidth}
-                    height={Constants.reels.canvasHeight}
-                  />
-                  <div className="sq-reel-overflow" />
-                </div>
-                <div className="sg-reel-wrapper">
-                  <canvas
-                    id="reel2"
-                    width={Constants.reels.canvasWidth}
-                    height={Constants.reels.canvasHeight}
-                  />
-                  <div className="sq-reel-overflow"></div>
-                </div>
-                <div className="sg-reel-wrapper">
-                  <canvas
-                    id="reel3"
-                    width={Constants.reels.canvasWidth}
-                    height={Constants.reels.canvasHeight}
-                  ></canvas>
-                  <div className="sq-reel-overflow"></div>
-                </div>
-              </div>
-              <GameControls allimgs={this.state.shuffledArrays} />
-            </div>
+            <Spin />
+            <iframe src="http://admiral/lobby/game/keks/" width="100%" height="44%"></iframe>
           </Col>
         </Row>
       </Container>

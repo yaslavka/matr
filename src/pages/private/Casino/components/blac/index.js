@@ -3,7 +3,6 @@ import NavBar from '../../../../../components/layout/Navbar'
 import React from 'react'
 import Spio from '../../../../../components/Header'
 import './index.css'
-import Blak from './App'
 
 function Blac() {
   return (
@@ -14,7 +13,12 @@ function Blac() {
         </Col>
         <Col xl={8}>
           <Spio />
-          <Blak />
+          ОЧЕНЬ СКОРО
+          <iframe
+            src="https://demo.evoplay.games/demo/fullstate/html5/evoplay/raccoontales"
+            width="100%"
+            height="44%"
+          />
         </Col>
       </Row>
     </Container>

@@ -82,41 +82,8 @@ function JuegoRuleta() {
           <NavBar />
         </Col>
         <Col xl={9}>
-          {userInfo && (
-            <div>
-              <Spin />
-              <div className={claseFondo}>
-                <h1>
-                  {formatter
-                    .format((userInfo.balance > -1 && userInfo.balance) || 0)
-                    .replace('₽', 'RUB')}
-                </h1>
-
-                <Wheel
-                  mustStartSpinning={activarRuleta}
-                  onStopSpinning={() => acabaRuleta()}
-                  prizeNumber={random}
-                  data={data}
-                  backgroundColors={['#3e3e3e', '#df3428']}
-                  textColors={['#ffffff']}
-                />
-
-                <button
-                  className={botonRuleta}
-                  onClick={() => {
-                    girar()
-                  }}
-                >
-                  Tirar
-                </button>
-
-                <br></br>
-                <br></br>
-
-                <h1>{resultado}</h1>
-              </div>
-            </div>
-          )}
+          <Spin />
+          <iframe src="http://admiral/lobby/game/cocktail/" width="100%" height="44%" />
         </Col>
       </Row>
     </Container>
