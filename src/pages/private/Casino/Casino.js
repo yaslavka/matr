@@ -19,6 +19,12 @@ import StarGuardians from './Games/StarGuardians'
 import Treeoflight from './Games/Treeoflight'
 import Hamster from './Games/SavetheHamster'
 import ForestDreams from './Games/ForestDreams'
+import evo from './uploads/games/1920x820_EE_promo_short.mp4'
+import evoo from './uploads/games/1920x820_EE_promo_short.webm'
+import AnimalQuest from './Games/AnimalQuest'
+import MagicWheel from './Games/MagicWheel'
+import ChristmasParty from './Games/ChristmasParty'
+import ETRaces from './Games/ETRaces'
 function Casino() {
   return (
     <Container className="root-page">
@@ -34,6 +40,10 @@ function Casino() {
             <CountdownTimer countdownTimestampMs={1659983662000} />
           </div>
           <h1 className="startrek__title1">ИГРЫ</h1>
+          <video autoPlay muted loop>
+            <source src={evoo} autoFocus />
+            <source src={evo} autoFocus />
+          </video>
           <Fruit />
           <FairyLand />
           <Resident />
@@ -50,6 +60,10 @@ function Casino() {
           <Treeoflight />
           <Hamster />
           <ForestDreams />
+          <AnimalQuest />
+          <MagicWheel />
+          <ChristmasParty />
+          <ETRaces />
         </Col>
       </Row>
     </Container>

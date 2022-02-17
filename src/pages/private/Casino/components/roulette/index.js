@@ -11,7 +11,11 @@ function Roll() {
         </Col>
         <Col xl={9}>
           <Spio />
-          <iframe src="http://admiral/lobby/game/cocktail/" width="100%" height="100%" />
+          <iframe
+            src="https://demo.evoplay.games/demo/fullstate/html5/evoplay/animalquest"
+            width="100%"
+            height="44%"
+          />
         </Col>
       </Row>
     </Container>

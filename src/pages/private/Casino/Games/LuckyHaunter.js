@@ -21,7 +21,7 @@ function LuckyHaunter() {
                         <div className="tmb-img">
                           <img src={luckyHaunter} />
                         </div>
-                        <div className="tmb-title">Crazy Monkey</div>
+                        <div className="tmb-title">Lucky Haunter</div>
                       </Link>
                     </div>
                   </div>
