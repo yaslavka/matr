@@ -3,7 +3,7 @@ import './App.css'
 import React, { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../../../components/layout/Navbar'
-import Spinss from './Header'
+import Spin from '../../Header'
 
 // eslint-disable-next-line react/prop-types
 const Bar = ({ id, owned, close, expires }) => {
@@ -342,33 +342,8 @@ const Bar = ({ id, owned, close, expires }) => {
           <NavBar />
         </Col>
         <Col xl={9}>
-          <Spinss />
-          <div className="fullSlot">
-            <h1 className="casinoName">casino montecarlo</h1>
-            <h1 className="price">{'Jackpot: ' + jackpot + '€'}</h1>
-            <div className="slot">
-              <div className="rows">{row1()}</div>
-              <div className="rows">{row2()}</div>
-              <div className="rows">{row3()}</div>
-            </div>
-            <h1 className="price">{premio()}</h1>
-            <div className="slotFoot">
-              <input
-                value={input}
-                type="number"
-                onChange={(e) => numChecker(e)}
-                className="betInput"
-                placeholder="0€"
-              ></input>
-              <button className="spinButton" onClick={() => play()}>
-                Spin
-              </button>
-            </div>
-            <h1 className="price">{'Available cash: ' + Math.round(balance * 100) / 100 + '€'}</h1>
-            <button onClick={() => setBalance(balance + 1000)} className="buyMoreButton">
-              Add 1000 €
-            </button>
-          </div>
+          <Spin />
+          <iframe src="http://admiral/lobby/game/crmonkey/" width="100%" height="44%" />
         </Col>
       </Row>
     </Container>

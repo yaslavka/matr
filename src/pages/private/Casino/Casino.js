@@ -2,16 +2,29 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../components/layout/Navbar'
 import CountdownTimer from '../StarTrek/CountdownTimer/CountdownTimer'
-import { Link } from 'react-router-dom'
-import routes from '../../../constants/routes.constants'
-import bgImage from './components/cuchillo.jpeg'
-import bgImag from './components/obesyn/mm.png'
-import bgIma from './img/mmm.png'
-import bgIm from './img/11.png'
-import bg from './components/Boom/images/bomb.svg'
-import blac from './components/blac/assets/poker-chip.png'
-import blaac from './components/vvvvv/assets/img/hexa.png'
-
+import './index.css'
+import Fruit from './Games/Fruit'
+import FairyLand from './Games/FairyLand'
+import Resident from './Games/Resident'
+import Keks from './Games/Keks'
+import CrazyMonkey from './Games/CrazyMonkey'
+import LuckyHaunter from './Games/LuckyHaunter'
+import Gnome from './Games/Gnome'
+import RockClimber from './Games/RockClimber'
+import Garage from './Games/Garage'
+import RaccoonTales from './Games/RaccoonTales'
+import NUKEWORLD from './Games/Nuke'
+import Roulette from './Games/Roulette'
+import StarGuardians from './Games/StarGuardians'
+import Treeoflight from './Games/Treeoflight'
+import Hamster from './Games/SavetheHamster'
+import ForestDreams from './Games/ForestDreams'
+import evo from './uploads/games/1920x820_EE_promo_short.mp4'
+import evoo from './uploads/games/1920x820_EE_promo_short.webm'
+import AnimalQuest from './Games/AnimalQuest'
+import MagicWheel from './Games/MagicWheel'
+import ChristmasParty from './Games/ChristmasParty'
+import ETRaces from './Games/ETRaces'
 function Casino() {
   return (
     <Container className="root-page">
@@ -27,80 +40,30 @@ function Casino() {
             <CountdownTimer countdownTimestampMs={1659983662000} />
           </div>
           <h1 className="startrek__title1">ИГРЫ</h1>
-          <Container>
-            <Link to={routes.rollet}>
-              {' '}
-              <img src={bgImage} alt="" width="15%" />
-              Спинер
-            </Link>
-            <Link to={routes.dice}>
-              {' '}
-              <img src={bgImage} alt="" width="15%" />
-              DICE
-            </Link>
-            <Link to={routes.fool}>
-              {' '}
-              <img src={bgImage} alt="" width="15%" />
-              Fool
-            </Link>
-            <Link to={routes.slots}>
-              {' '}
-              <img src={bgImage} alt="" width="15%" />
-              Slots
-            </Link>
-            <Link to={routes.barr}>
-              {' '}
-              <img src={bgImage} alt="" width="15%" />
-              BAR
-            </Link>
-            <Link to={routes.cost}>
-              {' '}
-              <img src={bgIm} alt="" width="15%" />
-              COST
-            </Link>
-            <Link to={routes.costs}>
-              {' '}
-              <img src={bgIma} alt="" width="15%" />
-              COSTS
-            </Link>
-            <Link to={routes.obes}>
-              {' '}
-              <img src={bgImag} alt="" width="15%" />
-              MONKEY
-            </Link>
-            <Link to={routes.boom}>
-              {' '}
-              <img src={bg} alt="" width="15%" />
-              BOOM
-            </Link>
-            <Link to={routes.blac}>
-              {' '}
-              <img src={blac} alt="" width="15%" />
-              BLAK
-            </Link>
-            <Link to={routes.blaac}>
-              {' '}
-              <img src={blaac} alt="" width="15%" />
-            </Link>
-            <Link to={routes.blaacb}>
-              <img src={blaac} alt="" width="15%" />
-            </Link>
-            <Link to={routes.blaa}>
-              <img src={blaac} alt="" width="15%" />
-            </Link>
-            <Link to={routes.lacs}>
-              <img src={blaac} alt="" width="15%" />
-            </Link>
-            <Link to={routes.sas}>
-              <img src={blaac} alt="" width="15%" />
-            </Link>
-            <Link to={routes.sasn}>
-              <img src={blaac} alt="" width="15%" />
-            </Link>
-            <Link to={routes.roll}>
-              <img src={blaac} alt="" width="15%" />
-            </Link>
-          </Container>
+          <video autoPlay muted loop>
+            <source src={evoo} autoFocus />
+            <source src={evo} autoFocus />
+          </video>
+          <Fruit />
+          <FairyLand />
+          <Resident />
+          <Keks />
+          <CrazyMonkey />
+          <LuckyHaunter />
+          <Gnome />
+          <RockClimber />
+          <Garage />
+          <RaccoonTales />
+          <NUKEWORLD />
+          <Roulette />
+          <StarGuardians />
+          <Treeoflight />
+          <Hamster />
+          <ForestDreams />
+          <AnimalQuest />
+          <MagicWheel />
+          <ChristmasParty />
+          <ETRaces />
         </Col>
       </Row>
     </Container>

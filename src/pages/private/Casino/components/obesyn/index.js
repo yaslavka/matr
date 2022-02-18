@@ -1,8 +1,7 @@
 import { Col, Container, Row } from 'reactstrap'
 import NavBar from '../../../../../components/layout/Navbar'
 import React from 'react'
-import Obe from './App'
-import Spio from '../../../../../components/Header'
+import Spin from '../Header'
 
 function Monk() {
   return (
@@ -12,8 +11,8 @@ function Monk() {
           <NavBar />
         </Col>
         <Col xl={8}>
-          <Spio />
-          <Obe />
+          <Spin />
+          <iframe src="http://admiral/lobby/game/rockclimber/" width="100%" height="44%" />
         </Col>
       </Row>
     </Container>

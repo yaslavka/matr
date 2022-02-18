@@ -50,6 +50,9 @@ import Blacs from './pages/private/Casino/components/DDD'
 import Sas from './pages/private/Casino/components/7777'
 import Sasn from './pages/private/Casino/components/zzz'
 import Roll from './pages/private/Casino/components/roulette'
+import MagicWhee from './pages/private/Casino/components/MagicWheel'
+import Christmas from './pages/private/Casino/components/ChristmasParty'
+import ETRace from './pages/private/Casino/components/ETRaces'
 
 export const publicRouteConfig = [
   {
@@ -347,6 +350,24 @@ export const panelRouteConfig = [
     id: '1tdfrd-5845bf-423440-82d-ec4174e4545847477',
     path: r.roll,
     component: Roll,
+    exact: true,
+  },
+  {
+    id: '1tdfrd-5845bf-42gg40-82d-ec4174e4545847477',
+    path: r.magicwhee,
+    component: MagicWhee,
+    exact: true,
+  },
+  {
+    id: '1tdfrd-5845bf-42gg40-82d-174e4545847477',
+    path: r.christmasparty,
+    component: Christmas,
+    exact: true,
+  },
+  {
+    id: '1tdfrd-5845bf-42gg40-82d-45847477',
+    path: r.etraces,
+    component: ETRace,
     exact: true,
   },
 ]
