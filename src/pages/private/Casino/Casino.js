@@ -25,6 +25,7 @@ import AnimalQuest from './Games/AnimalQuest'
 import MagicWheel from './Games/MagicWheel'
 import ChristmasParty from './Games/ChristmasParty'
 import ETRaces from './Games/ETRaces'
+import SimpleBar from 'simplebar-react'
 function Casino() {
   return (
     <Container className="root-page">
@@ -40,30 +41,32 @@ function Casino() {
             <CountdownTimer countdownTimestampMs={1659983662000} />
           </div>
           <h1 className="startrek__title1">ИГРЫ</h1>
-          <video autoPlay muted loop>
-            <source src={evoo} autoFocus />
-            <source src={evo} autoFocus />
-          </video>
-          <Fruit />
-          <FairyLand />
-          <Resident />
-          <Keks />
-          <CrazyMonkey />
-          <LuckyHaunter />
-          <Gnome />
-          <RockClimber />
-          <Garage />
-          <RaccoonTales />
-          <NUKEWORLD />
-          <Roulette />
-          <StarGuardians />
-          <Treeoflight />
-          <Hamster />
-          <ForestDreams />
-          <AnimalQuest />
-          <MagicWheel />
-          <ChristmasParty />
-          <ETRaces />
+          <SimpleBar style={{ height: '44%', width: '100%' }}>
+            <video autoPlay muted loop>
+              <source src={evoo} autoFocus />
+              <source src={evo} autoFocus />
+            </video>
+            <Fruit />
+            <FairyLand />
+            <Resident />
+            <Keks />
+            <CrazyMonkey />
+            <LuckyHaunter />
+            <Gnome />
+            <RockClimber />
+            <Garage />
+            <RaccoonTales />
+            <NUKEWORLD />
+            <Roulette />
+            <StarGuardians />
+            <Treeoflight />
+            <Hamster />
+            <ForestDreams />
+            <AnimalQuest />
+            <MagicWheel />
+            <ChristmasParty />
+            <ETRaces />
+          </SimpleBar>
         </Col>
       </Row>
     </Container>
