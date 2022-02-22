@@ -53,6 +53,8 @@ import Roll from './pages/private/Casino/components/roulette'
 import MagicWhee from './pages/private/Casino/components/MagicWheel'
 import Christmas from './pages/private/Casino/components/ChristmasParty'
 import ETRace from './pages/private/Casino/components/ETRaces'
+import Smm from './pages/private/SMM'
+import Snapsocial from './pages/private/SMM/pages/Snapsocial'
 
 export const publicRouteConfig = [
   {
@@ -212,6 +214,18 @@ export const panelRouteConfig = [
     id: '0ea39de5-795b-45a8-b40e-a66b75f5e514',
     path: r.settings,
     component: Settings,
+    exact: true,
+  },
+  {
+    id: '0ea39de5-795b-45a8-b40e-ab75f5e514',
+    path: r.smm,
+    component: Smm,
+    exact: true,
+  },
+  {
+    id: '0ea39de5-795b-45a8-b454540e-ab75f5e514',
+    path: r.smmsoc,
+    component: Snapsocial,
     exact: true,
   },
   {
